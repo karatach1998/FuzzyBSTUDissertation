@@ -20,7 +20,6 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
 \usepgfplotslibrary{fillbetween}
-
 \usepackage{fullwidth}
 \usepackage{xcolor}
 
@@ -34,8 +33,12 @@
 \input{Dissertation/disstyles}  % Стили для диссертации
 \input{Dissertation/userstyles} % Стили для специфических пользовательских задач
 
-
-\DeclareMathOperator*{\Tone}{T_1}
+\DeclareMathOperator*{\CapOp}{\cap}
+\DeclareMathOperator*{\Tone}{\mathrm{T}_1}
+\DeclareMathOperator*{\Ttwo}{\mathrm{T}_2}
+\DeclareMathOperator*{\Tthree}{\mathrm{T}_3}
+\DeclareMathOperator*{\Tfour}{\mathrm{T}_4}
+\DeclareMathOperator*{\Tnorm}{\mathrm{T}}
 
 %%% Библиография. Выбор движка для реализации %%%
 % Здесь только проверка установленного ключа. Сама настройка выбора движка
@@ -68,6 +71,17 @@
 % Если все команды закомментированы, то документ будет выведен в PDF файл полностью
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\small, % Set a monospaced, slightly larger font
+    frame=single,              % Add a frame around the code
+    numbers=left,              % Line numbers on the left
+    keywordstyle=\color{blue}\bfseries, % Highlight keywords in blue boldface
+    numberstyle=\tiny,         % Line number style
+    breaklines=true,           % Automatic line breaking
+    captionpos=b,              % Caption position at the bottom
+    language=C++               % Default language for listings
+}
 
 \begin{document}
 %%% Переопределение именований типовых разделов
@@ -91,9 +105,9 @@
 \include{Dissertation/part2}           % Глава 2
 \include{Dissertation/part3}           % Глава 3
 \include{Dissertation/part4}           % Глава 4
-\include{Dissertation/part1_example}           % Глава 1
-\include{Dissertation/part2_example}           % Глава 2
-\include{Dissertation/part3_example}           % Глава 3
+%\include{Dissertation/part1_example}           % Глава 1
+%\include{Dissertation/part2_example}           % Глава 2
+%\include{Dissertation/part3_example}           % Глава 3
 \include{Dissertation/conclusion}      % Заключение
 \include{Dissertation/acronyms}        % Список сокращений и условных обозначений
 \include{Dissertation/dictionary}      % Словарь терминов
