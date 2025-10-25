@@ -1,3 +1,43 @@
+%% authorvak
+\nocite{Sinuk2020}%
+\nocite{Karatach2021}%
+\nocite{Karatach2023}%
+\nocite{vakbib4}%
+\nocite{vakbib5}%
+\nocite{vakbib6}%
+\nocite{vakbib7}%
+\nocite{vakbib8}%
+\nocite{vakbib9}%
+\nocite{vakbib10}%
+\nocite{vakbib11}%
+\nocite{vakbib12}%
+%
+%% authorwos
+\nocite{Sinuk2023}%
+\nocite{Karatach2024}%
+\nocite{wosbib1}%
+%
+%% authorscopus
+\nocite{Karatach2023b}%
+%
+%% authorpatent
+\nocite{patbib1}%
+%
+%% authorconf
+\nocite{Karatach2020}%
+\nocite{Karatach2021parallel}%
+\nocite{Sinuk2022}%
+\nocite{Karatach2022}%
+\nocite{Sinuk2023kii}%
+%
+%% authorother
+\nocite{bib1}%
+\nocite{bib2}%
+%
+%% authorprogram
+\nocite{Rospatent1}%
+\nocite{Rospatent2}%
+
 \pdfbookmark{Общая характеристика работы}{characteristic}             % Закладка pdf
 \section*{Общая характеристика работы}
 
@@ -7,13 +47,14 @@
 \newcommand{\tasks}{\pdfbookmark[1]{Задачи}{tasks}\underline{\textbf{\tasksTXT}}}
 \newcommand{\aimtasks}{\pdfbookmark[1]{Цели и задачи}{aimtasks}\aimtasksTXT}
 \newcommand{\researchObject}{\pdfbookmark[1]{Объект исследования}{researchObject}\underline{\textbf{\researchObjectTXT}}}
-\newcommand{\researchSubject}{\pdfbookmark[1]{Субъект исследования}{researchSubject}\underline{\textbf{\researchSubjectTXT}}}
+\newcommand{\researchSubject}{\pdfbookmark[1]{Предмет исследования}{researchSubject}\underline{\textbf{\researchSubjectTXT}}}
 \newcommand{\novelty}{\pdfbookmark[1]{Научная новизна}{novelty}\underline{\textbf{\noveltyTXT}}}
 \newcommand{\theoreticalValue}{\pdfbookmark[1]{Теоретическая значимость}{theoreticalValue}\underline{\textbf{\theoreticalValueTXT}}}
 \newcommand{\practicalValue}{\pdfbookmark[1]{Практическая значимость}{practicalValue}\underline{\textbf{\practicalValueTXT}}}
 \newcommand{\influence}{\pdfbookmark[1]{Практическая значимость}{influence}\underline{\textbf{\influenceTXT}}}
 \newcommand{\methods}{\pdfbookmark[1]{Методология и методы исследования}{methods}\underline{\textbf{\methodsTXT}}}
 \newcommand{\defpositions}{\pdfbookmark[1]{Положения, выносимые на защиту}{defpositions}\underline{\textbf{\defpositionsTXT}}}
+\newcommand{\specialityRelation}{\pdfbookmark[1]{Область исследования}{specialityRelation}\underline{\textbf{\specialityRelationTXT}}}
 \newcommand{\reliability}{\pdfbookmark[1]{Достоверность}{reliability}\underline{\textbf{\reliabilityTXT}}}
 \newcommand{\probation}{\pdfbookmark[1]{Апробация}{probation}\underline{\textbf{\probationTXT}}}
 \newcommand{\contribution}{\pdfbookmark[1]{Личный вклад}{contribution}\underline{\textbf{\contributionTXT}}}
@@ -89,22 +130,22 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 	\mu_{B'_k}(y|\mathbf{x'}) = \sup_{\mathbf{x}\in \mathbf{X}}\left\{\mu_{\mathbf{A'}}(\mathbf{x'})\overset{T_2}{\star} I(\mu_{\mathbf{A_k}}(\mathbf{x}), \mu_{B_k}(y))\right\}.
 \end{equation}
 
-В (\ref{eqn:fuz-problem-4}) применена условная нотация, так как ввод в нечеткую систему происходит при определенном значении $\mathbf{x}$, а именно $\mathbf{x'}$. Обозначение $\mu_{B'_k}(y | \mathbf{x'})$ показывает, что $\mu_{B'_k}$ изменяется с каждым значением $\mathbf{x'}$. \textbf{Вычислительная сложность выражения (\ref{eqn:fuz-problem-4}) составляет $O(|X_1|\cdot |X_2|\cdot \dots \cdot |X_n|\cdot |Y|)$ т.е. экспоненциальная.}
+В (\ref{eqn:fuz-problem-4}) применена условная нотация, так как ввод в нечеткую систему происходит при определенном значении $\mathbf{x}$, а именно $\mathbf{x'}$. Обозначение $\mu_{B'_k}(y | \mathbf{x'})$ показывает, что $\mu_{B'_k}$ изменяется с каждым значением $\mathbf{x'}$. \textbf{Вычислительная сложность выражения (\ref{eqn:fuz-problem-4}) составляет ${O(|X_1|\cdot |X_2|\cdot \dots \cdot |X_n|\cdot |Y|)}$ т.е. экспоненциальная.}
 
-Для эмпирической оценки влияния использования несинглтонной фаззификации на качество нечеткого моделирования большая доля публикаций рассматривает задачу прогнозирования зашумленных временных рядов. Нечеткое прогнозирование временных рядов с использованием синглтонной фаззификации показало лучшую точность прогнозирования с использованием логического типа вывода в сравнении с выводом типа Мамдани. Для этого в работе описана адаптивная процедура несинглтонной фаззификации в зашумленных временных рядах.
+%Для эмпирической оценки влияния использования несинглтонной фаззификации на качество нечеткого моделирования большая доля публикаций рассматривает задачу прогнозирования зашумленных временных рядов. Нечеткое прогнозирование временных рядов с использованием синглтонной фаззификации показало лучшую точность прогнозирования с использованием логического типа вывода в сравнении с выводом типа Мамдани. Для этого в работе описана адаптивная процедура несинглтонной фаззификации в зашумленных временных рядах.
 
-Для построения базы правил на основе набора эталонных данных был адаптирован алгоритм оптимизации --- метод роя частиц (Particle-swarm optimization, PSO). Построение базы правил состоит в подборе параметров функций принадлежности нечетких множеств в базе правил, сформированных в матрицу параметров:
-\begin{equation*}
-	\theta_{\mathbf{R}} = \begin{bmatrix}
-		\theta_{\mu_{\mathbf{R_1}}}\\
-		\vdots\\
-		\theta_{\mu_{\mathbf{R_N}}}
-	\end{bmatrix} = \begin{bmatrix}
-		\theta_{\mu_{A_{11}}} & \theta_{\mu_{A_{12}}} & \dots & \theta_{\mu_{A_{1n}}} & \theta_{\mu_{B_{1}}} \\
-		\vdots & \vdots & \ddots & \vdots & \vdots \\
-		\theta_{\mu_{A_{N1}}} & \theta_{\mu_{A_{N2}}} & \dots & \theta_{\mu_{A_{Nn}}} & \theta_{\mu_{B_{N}}} \\
-	\end{bmatrix}.
-\end{equation*}
+%Для построения базы правил на основе набора эталонных данных был адаптирован алгоритм оптимизации --- метод роя частиц (Particle-swarm optimization, PSO). Построение базы правил состоит в подборе параметров функций принадлежности нечетких множеств в базе правил, сформированных в матрицу параметров:
+%\begin{equation*}
+%	\theta_{\mathbf{R}} = \begin{bmatrix}
+%		\theta_{\mu_{\mathbf{R_1}}}\\
+%		\vdots\\
+%		\theta_{\mu_{\mathbf{R_N}}}
+%	\end{bmatrix} = \begin{bmatrix}
+%		\theta_{\mu_{A_{11}}} & \theta_{\mu_{A_{12}}} & \dots & \theta_{\mu_{A_{1n}}} & \theta_{\mu_{B_{1}}} \\
+%		\vdots & \vdots & \ddots & \vdots & \vdots \\
+%		\theta_{\mu_{A_{N1}}} & \theta_{\mu_{A_{N2}}} & \dots & \theta_{\mu_{A_{Nn}}} & \theta_{\mu_{B_{N}}} \\
+%	\end{bmatrix}.
+%\end{equation*}
 
 
 %\textit{Постановка задачи.} Нечеткий вывод, согласно композиционному правилу вывода modus-ponens, выражается через композицию нечетких отношений:
@@ -138,97 +179,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 
 \textbf{Вторая глава} посвящена построению более эффективного метода нечеткого вывода на основе нечеткого значения истинности (НЗИ) и формальному описанию его приложения к задачам классификации и регрессии временных рядов на основе нечетких систем с фаззификацией типа non-singleton.
 
-
-\begin{figure}[th]
-	\centering
-	\begin{tikzpicture}[
-		scale=0.8
-	]
-		\tikzset{
-			every pin/.style={
-				%fill=yellow!50!white,rectangle,rounded corners=3pt,
-				font=\footnotesize, distance=2
-			},
-			every pin edge/.style={
-				line width=0.5pt
-			},
-			small dot/.style={fill=black,circle,scale=0.5},
-		}
-		\begin{axis}[
-			width=10cm, height=10cm,
-			axis lines=middle,
-			xmin=-0.0, xmax=1.1, ymin=-0.0, ymax=1.1,
-			xlabel={$v$}, xlabel style = {at=(current axis.right of origin), anchor=west},
-			ylabel={$\mu(v)$}, ylabel style = {at=(current axis.above origin), anchor=south},
-			grid = major,
-			clip mode=individual,
-			]
-			\begin{scope}
-				\clip (0,0) rectangle (1,1);
-				
-				\draw [rotate around={45:(1,0)},line width=2pt] (1,0) ellipse (1.4142135623730951 and 0.816496580927726);
-				\draw [rotate around={-45:(0,0)},line width=2pt] (0,0) ellipse (1.4142135623730951 and 0.816496580927726);
-				\draw [rotate around={45:(0,1)},line width=2pt] (0,1) ellipse (1.4142135623730951 and 0.816496580927726);
-				\draw [rotate around={-45:(1,1)},line width=2pt] (1,1) ellipse (1.4142135623730951 and 0.816496580927726);
-				\draw [line width=2pt] plot(\x,{(-0--1*\x)/1});
-				\draw [line width=2pt] plot(\x,{(--1-1*\x)/1});
-				\draw [line width=2pt] plot(\x,{(--1-0*\x)/1});
-				\draw [line width=2pt] plot(\x,{(-0-0*\x)/1});
-				\draw [line width=2pt] (1,0) -- (1,1);
-				\draw [line width=2pt] (0,0) -- (0,1);
-				
-				\coordinate (smalllie) at (0.207750076598, 0.8798067848812);
-				\coordinate (lie) at (0.2,0.8);
-				\coordinate (largelie) at (0.1776022108245, 0.7092399162497);
-				
-				\coordinate (smalltruth) at (0.7627014759205, 0.8600064781734);
-				\coordinate (truth) at (0.775, 0.775);
-				\coordinate (largetruth) at (0.8049494415761, 0.6855072896032);
-				
-				\coordinate (quazilie) at (0.25,0);
-				\coordinate (quazitruth) at (0.25,1);
-				\coordinate (absolutelie) at (0,0.5);
-				\coordinate (absolutetruth) at (1,0.45);
-			\end{scope}
-			
-			
-			\node [small dot,pin={[pin distance=3cm]185:Слегка ложно}] at (smalllie) {};
-			\node [small dot,pin={[pin distance=3cm]185:Ложно}] at (lie) {};
-			\node [small dot,pin={[pin distance=3cm]185:Очень ложно}] at (largelie) {};
-			
-			\node [small dot,pin={[pin distance=3cm]-10:Слегка истинно}] at (smalltruth) {};
-			\node [small dot,pin={[pin distance=3cm]-10:Истинно}] at (truth) {};
-			\node [small dot,pin={[pin distance=3cm]-10:Очень истинно}] at (largetruth) {};
-			
-			\node [small dot,pin={[pin distance=0.8cm]40:Квазиистинно}] at (quazitruth) {};
-			\node [small dot,pin={[pin distance=0.8cm]-60:Квазиложно}] at (quazilie) {};
-			\node [small dot,pin={[pin distance=1cm]-10:Абсолютно истинно}] at (absolutetruth) {};
-			\node [small dot,pin={[pin distance=1cm]185:Абсолютно ложно}] at (absolutelie) {};
-			
-			
-			% Draw the object
-			%\node[draw, circle, fill=red!20] (B) at (0.2,0.2) {B};
-			
-			% Define the position for the description
-			% \node[anchor=east] (description) at (0.2,0.5) {This is the description of object B};
-			
-			% Draw a polyline with arrows and dashed style
-			%\draw[->, dashed, thick] (B) -- ++(-0.1,0.0) -- ++(0,0.1) -- (description);
-			
-			
-			% Draw the object
-			%\node[draw, ellipse, fill=green!20] (C) at (0.9,0.9) {C};
-			
-			% Define the position for the description
-			%\node[anchor=north] (description) at (0.5,0.6) {This is the description of object C};
-			
-			% Draw a polyline using edge
-			%\path (C) edge[->, out=270, in=90] (description);
-		\end{axis}
-	\end{tikzpicture}
-	\caption{Значения лингвистической переменной «истинность»}
-	\label{fig:ftv-all-cases}
-\end{figure}
+\ul{Альтернативный метод нечеткого вывода с полиномиальной вычислительной сложностью}
 
 Нечеткое значение истинности нечеткого множества $A$ относительно н. м. $A'$ представляет собой нечеткое множество с функцией принадлежности совместимости $CP(A, A')$ $A$ по отношению к $A'$, причем $A'$ рассматривается как достоверное:
 \begin{equation}
@@ -236,7 +187,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 	\tau_{A_k|A'}(v) = \mu_{CP(A_k, A')}(v) = \sup_{\substack{\mu_{A_k}(x) = v \\ x \in X}} \left\{ \mu_{A'}(x)\right\}.
 \end{equation}
 
-На рисунке \cref{fig:ftv-all-cases} изображены функции принадлежности нечетких значений термов лингвистической переменной <<истинность>>.
+%На рисунке \cref{fig:ftv-all-cases} изображены функции принадлежности нечетких значений термов лингвистической переменной <<истинность>>.
 
 Для нечеткой системы с одним входом истинностное преобразование позволяет выполнить переход к новому виду формулы композиционного правила вывода:
 \begin{equation}
@@ -252,20 +203,20 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 
 Для нечеткой системы с несколькими входами НЗИ вычисляются по каждому входу отдельно, а затем производится их свертка по расширенной по принципу обобщения $\tilde{T}$-норме.
 \begin{align}
-	\label{eqn:ftv-compute-7}
-	\tau_{\mathbf{A_k}|\mathbf{A'}}(v) = \underset{i=\overline{1,n}}{\mathrm{\tilde{T}}} \tau_{A_{ki}|A'_i} &= \sup_{\substack{\underset{i=\overline{1,n}}{\mathrm{T_1}}v_i = v \\ (v_1, \dots, v_n) \in [0, 1]^n}} \left\{\underset{i=\overline{1,n}}{\mathrm{T_3}}\tau_{A_{ki}|A'_i}(v_i)\right\} \\ \label{eqn:ftv-10} &= \sup_{\substack{\underset{i=\overline{1,n}}{\mathrm{T_1}}\mu_{A_{ki}}(x_i)=v \\ (x_1, \dots, x_n) \in \mathbf{x}}} \left\{ \underset{i=\overline{1,n}}{\mathrm{T_3}} \mu_{A'_i}(x_i) \right\}, v \in [0, 1],
+	\tau_{\mathbf{A_k}|\mathbf{A'}}(v) = \underset{i=\overline{1,n}}{\mathrm{\tilde{T}}} \tau_{A_{ki}|A'_i} &= \sup_{\substack{\underset{i=\overline{1,n}}{\mathrm{T_1}}v_i = v \\ (v_1, \dots, v_n) \in [0, 1]^n}} \left\{\underset{i=\overline{1,n}}{\mathrm{T_3}}\tau_{A_{ki}|A'_i}(v_i)\right\} \label{eqn:ftv-compute-8} \\ &= \sup_{\substack{\underset{i=\overline{1,n}}{\mathrm{T_1}}\mu_{A_{ki}}(x_i)=v \\ (x_1, \dots, x_n) \in \mathbf{x}}} \left\{ \underset{i=\overline{1,n}}{\mathrm{T_3}} \mu_{A'_i}(x_i) \right\}, v \in [0, 1]
+	\label{eqn:ftv-compute-9},
 \end{align}
 
-Рекурсивная схема вычисления свертки НЗИ по формуле (\ref{eqn:ftv-10}) иллюстрируется выражением:
-\begin{align*}
+Рекурсивная схема вычисления свертки НЗИ по формуле (\ref{eqn:ftv-compute-8}) иллюстрируется выражением:
+\begin{align}
 	\label{eqn:ftv-compute-10}
 	\tau_{A_k, A'}(v) & = \underset{i=\overline{1,n}}{\mathrm{\tilde{T}_1}}\tau_{A_{ki}|A'_i}(v_i) \\
 	& = \left(\dots\left(\left(\mu_{CP(A_{k1}, A'_1)}(v_1)\ \mathrm{\tilde{T}_1}\ \mu_{CP(A_{k2}, A'_2)}(v_2)\right)\ \mathrm{\tilde{T}_1}\ \dots \right) \mathrm{\tilde{T}_1}\ \mu_{CP(A_{kn}, A'_n)}\right).
-\end{align*}
+\end{align}
 
 Тогда для системы с $n$ входами выражения нечеткого вывода на основе НЗИ (\ref{eqn:ftv-compute-5}) примет вид:
 \begin{equation}
-	\label{eqn:ftv-compute-9}
+	\label{eqn:ftv-compute-11}
 	\mu_{B'_k}(y|\mathbf{x'}) = \sup_{v \in [0, 1]} \left\{\tau_{\mathbf{A_k}|\mathbf{A'}}(v) \overset{\mathrm{T_2}}{\star} I(v, \mu_{B_k}(y))\right\}
 \end{equation}
 
@@ -276,49 +227,137 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 \label{fig:ftv-schema-comparizon}
 \end{figure}
 
-Порядок функции временной сложности вычисления $B'_k$ на основе выражения (\ref{eqn:ftv-compute-9}) составляет $O\left(n|V|^2+|V|\cdot |Y|\right)$, где $V=CP(A_k, A')$. Сравнение схем нечетких выводов с соответствии с соотношениями (\ref{eqn:fuz-problem-4}) и (\ref{eqn:ftv-compute-9}) представлены на рис. \cref{fig:ftv-schema-comparizon}.
+Порядок функции временной сложности вычисления $B'_k$ на основе выражения (\ref{eqn:ftv-compute-11}) составляет $O\left(n|V|^2+|V|\cdot |Y|\right)$, где $V=CP(A_k, A')$. Сравнение схем нечетких выводов с соответствии с соотношениями (\ref{eqn:fuz-problem-4}) и (\ref{eqn:ftv-compute-11}) представлены на рис. \cref{fig:ftv-schema-comparizon}.
 
-\begin{figure}[th]
-	\centering
-	\includegraphics[scale=0.5]{neurofuzzysystem-defuzzification-cog}
-	\caption{Схема нейро-нечеткой системы с использованием дефаззификации по методу центра тяжести}
-	\label{fig:neurofuzzysystem-defuzzification-cog}
-\end{figure}
+\todo{\ul{Вывод типа Мамдани}}
 
-Нейро-сетевая структура изображена на рисунке 
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.5]{out-mf-with-low-crossing}
-	\caption{Пример нечетких множеств, удовлетворяющих условию $\mu_{B_k}(y_r) = 0$ для $y \ne r$.}
-	\label{fig:out-mf-with-low-crossing}
-\end{figure}
-
-В \cite{Sinuk2023} ослаблено ограничение на использование одной и той же $T$-нормы в работах Менделя на примере вывода типа Мамдани, а также показано, что вывод по отдельному правилу при $T_2 = T_4 = T$ может быть записан через \textit{меру возможности}:
+В \cite{Sinuk2023} ослаблено ограничение на использование одной и той же $T$-нормы в формуле композиционного правила вывода в работах Менделя для случая вывода типа Мамдани, а также показано, что вывод по отдельному правилу в случае $T_2 = T_4 = T$ может быть записан через \textit{меру возможности}:
 \begin{align*}
 	\mu_{B'_k}(y) = \sup_{v\in[0;1]}\left\{\tau_{A_{k}|A'} \overset{\mathrm{T_2}}{\star} (v \overset{\mathrm{T_4}}{\star} \mu_{B_k}(y)) \right\} = \textstyle\prod_{\mathbf{A_k}|\mathbf{A'}} \overset{\mathrm{T}}{\star} \mu_{B_k}(y),
 \end{align*}
 где $\prod_{\mathbf{A_k}|\mathbf{A'}}=\sup_{v\in[0;1]}\left\{\tau_{A_{k}|A'} \overset{\mathrm{T}}{\star} v\right\}$.
-Также в этой статье показана зависимость результата дефаззификации от ширины гауссовой функции принадлежности при использовании $T$-нормы Ларсена и дефаззификации \textit{по центру суммы}, в отличии от дефаззификации \textit{по среднему центру}.
 
-Для предложенного метода вывода на основе нечеткого значения истинности в \cite{Karatach2024} показано, что для достаточно удаленных и непересекающихся выходных ф. п. нечетких множеств, т. е. когда $\mu_{B_k}(\bar{y}_r) = 0$ для $k \ne r$ (как изображено на рисунке \cref{fig:out-mf-with-low-crossing}), \todo{сложность вычисления дефаззификации по центру тяжести сокращается за счет упрощения выражений импликаций}.
 
-Тогда для модели классификации
+Если при этом используется дефаззификация \textit{по центру сумм (CoS)} и $T$-норма Ларсена, то, как доказано в \cite{Sinuk2023}, результат дефаззификации зависит от ширины гауссовой или треугольной функции принадлежности консеквента, тогда как дефаззификация \textit{по среднему центру} учитывает только параметр центра. Например, при использовании в качестве выходной ф. п. гауссовой функции $\mu_{B_k}(y) = exp(-((y-\bar{y}_k)/\sigma_k)^2)$ формула дефаззификации имеет вид: 
 
-Тогда для модели регрессии.
+\begin{equation}
+	\hat{y}_{CoS} = \frac{\int_{\mathbb{Y}} y \sum_{k=1}^{N} \prod_{\mathbf{A_k}|\mathbf{A'}} \overset{\mathrm{T}_2}{\star} \mu_{B_k}(y)}{\int_{\mathbb{Y}} \sum_{k=1}^{N} \prod_{\mathbf{A_k}|\mathbf{A'}} \overset{\mathrm{T}_2}{\star} \mu_{B_k}(y)} = \frac{\sum_{k=1}^{N} \prod_{\mathbf{A_k}|\mathbf{A'}} \bar{y}_k \sigma_k}{\sum_{k=1}^{N} \prod_{\mathbf{A_k}|\mathbf{A'}} \sigma_k},
+\end{equation}
+поскольку $	\int_{-\inf}^{\inf}\mu_{B_k}(y) dy = \sigma_k \sqrt{\pi}$ и $\int_{-\inf}^{\inf} y \mu_{B_k}(y) dy = \bar{y}_k \sigma_k \sqrt{\pi}$.
+
+Для предложенного метода вывода на основе нечеткого значения истинности в \cite{Karatach2024} показано, что для достаточно удаленных и непересекающихся выходных ф. п. нечетких множеств, т. е. когда $\mu_{B_k}(\bar{y}_r) = 0$ для $k \ne r$, сложность вычисления дефаззификации по центру тяжести сокращается за счет упрощения выражений импликаций:
+\begin{itemize}
+	\item для \textit{S}-импликации
+	\begin{equation*}
+		\hat{y}_{CoG} = \frac{\sum_{k=1}^{N} \overline{y}_k \Tnorm_{r=1}^N \left\{\sup_{v\in [0, 1]} \left\{\tau_{A_r|A'}\overset{\mathrm{T}_2}{\star}(1-v)\right\}\right\}}{\sum_{k=1}^{N} \Tnorm_{r=1}^N \left\{\sup_{v\in [0, 1]} \left\{\tau_{A_r|A'}\overset{\mathrm{T}_2}{\star}(1-v)\right\}\right\}},
+	\end{equation*}
+	\item для \textit{R}-импликации
+	\begin{equation*}
+		\hat{y}_{CoG} = \frac{\sum_{k=1}^{N} \overline{y}_k \Tnorm_{r=1}^N \left\{\tau_{A_r|A'}(0)\right\}}{\sum_{k=1}^{N} \Tnorm_{r=1}^N \left\{\tau_{A_r|A'}(0)\right\}},
+	\end{equation*}
+	\item для \textit{Q}-импликации
+	\begin{equation*}
+	{\fontsize{11}{6}
+		\hat{y}_{CoG} = \frac{
+			\sum_{k=1}^{N} \overline{y}_k \mathrm{T}_2 \left\{
+			\sup_{v\in [0, 1]} \left\{\tau_{A_k|A'}\overset{\mathrm{T}_2}{\star}max(1-v, v)\right\}
+			\Tnorm_{\substack{r=1\\r\ne k}}^N \left\{
+			\sup_{v\in [0, 1]} \left\{\tau_{A_r|A'}\overset{\mathrm{T}_2}{\star}(1-v)\right\}
+			\right\}
+			\right\}
+		}{
+			\sum_{k=1}^{N} \mathrm{T}_2 \left\{
+			\sup_{v\in [0, 1]} \left\{\tau_{A_k|A'}\overset{\mathrm{T}_2}{\star}max(1-v, v)\right\}
+			\Tnorm_{\substack{r=1\\r\ne k}}^N \left\{
+			\sup_{v\in [0, 1]} \left\{\tau_{A_r|A'}\overset{\mathrm{T}_2}{\star}(1-v)\right\}
+			\right\}
+			\right\}
+		}.
+	}
+	\end{equation*}
+\end{itemize}
+
+
+
+\ul{Применение предложенного метода вывода в нечеткой модели для задачи классификации объектов}
+
+Пусть производится классификация для набора объектов $\left\{q_l\right\}_{l=1}^M$, значения признаков которых значения признаков формализуются посредством термов лингвистических переменных, совокупность значений которых формирует вектор $\mathbf{x_l}=\left[x_{l1},\ldots,x_{ln}\right]$. Объекты классифицируются среди множества классов $\Omega = \left\{\omega_1, \dots, \omega_m\right\}$. Тогда база знаний нечеткой системы описывается набором из $N$ правил вида:
+\begin{align*}
+	R_k: \text{Если } \bigwedge_{i=1}^n \left(x_i\text{ есть }A_{ki}\right)\text{, то }\bigwedge_{j=1}^m \left(q\in\omega_j\,(\text{со степенью }\bar{z}_{kj})\right), k=\overline{1,N}.
+\end{align*}
+В этом правиле степень принадлежности объекта $q$ к классу $\omega_j$ задается значением $\bar{z}_{kj}$, которому можно поставить в соответствие значение лингвистической переменной $z_j$. Это значение выражается нечетким множеством имеющим в качестве базового множеств диапазон $[0,1]$, а в качестве функции принадлежности используется singleton:
+\begin{equation}
+\mu_{B_{kj}}(z_j) = \left\{
+\begin{alignedat}{2}
+	& 1, \quad & \text{eсли } z_j = \bar{z}_{kj} \\
+	& 0, \quad & \text{eсли } z_j \ne \bar{z}_{kj}
+\end{alignedat}
+\right.
+\end{equation}
+
+Тогда при использовании дискретизированной дефаззификации по центру тяжести степень принадлежности объекта $q$ к $j$-му классу вычисляется по формуле:
+\begin{align}
+	\tau_{A_k|A'}(v) = \underset{i=\overline{1,n}}{\mathrm{\tilde{T}}} \left\{\mu_{CP(A_{ki}, A'_i)}(v_i)\right\}, k=\overline{1,N},\\
+	\hat{z}_j = \frac{\sum_{r=1}^{N} \bar{z}_r \Tnorm_{k=1}^N \left\{\sup_{v\in [0, 1]} \left\{\tau_{\mathbf{A_k}|\mathbf{A'}}\overset{\mathrm{T}_2}{\star} I\left(v, \mu_{B_{kj}}(\bar{z}_r)\right)\right\}\right\}}{\sum_{r=1}^{N} \Tnorm_{k=1}^N \left\{\sup_{v\in [0, 1]} \left\{\tau_{\mathbf{A_k}|\mathbf{A'}}\overset{\mathrm{T}_2}{\star} I\left(v, \mu_{B_{kj}}(\bar{z}_r)\right)\right\}\right\}}.
+\end{align}
+
+%\begin{figure}[th]
+%	\centering
+%	\includegraphics[scale=0.5]{neurofuzzysystem-defuzzification-cog}
+%	\caption{Схема нейро-нечеткой системы с использованием дефаззификации по методу центра тяжести}
+%	\label{fig:neurofuzzysystem-defuzzification-cog}
+%\end{figure}
+
+
+
+\ul{Применение предложенного метода вывода в нечеткой модели для задачи регрессии временных рядов}
+
+Пусть задан временной ряд $\left\{y_t\right\}_{t=1}^T = \left\{y_1, \dots, y_T\right\}$, где $y_t \in \mathbb{R}$ --- измеренное значение наблюдаемой переменной в момент времени $t$, а $T$ --- длина доступной выборки. При моделировании временных последовательностей с использованием нейро-нечетких систем каждое значение $y_t\in \mathbb{Y}\subseteq \mathbb{R}$ фаззифицируется в нечеткое множество $A'_t$. Тогда для прогнозирования значения $\hat{y}_{t+h}$ с горизонтом $h$ на основании среза наблюдений $y_{t-p+1}, \dots, y_t$ можно использовать нечеткую систему с базой из $N$ правил вида:
+\begin{align*}
+	R_k: \text{Если } \bigwedge_{i=1}^p \left(y_{t-i+1}\text{ есть }A_{ki}\right)\text{, то }y_{t+1}\textrm{ есть }A_{k\,p+1}, k=\overline{1,N},
+\end{align*}
+где $p$ --- размер окна запаздывания (порядок модели, количество входов нечеткой системы).
+
+В задаче регрессии дискретная формула дефаззификации по центру тяжести не показывает достаточной точности, а непрерывная ее формулировка имеет большую вычислительную сложность. Поэтому в работе для регрессии используется дефаззификация по среднему максимуму:
+
+\begin{align}
+	\tau_{A_k|A'}(v) = \underset{i=\overline{1,n}}{\mathrm{\tilde{T}}} \left\{\mu_{CP(A_{ki}, A'_{t-p+i})}(v_i)\right\}, k=\overline{1,N},\\
+	\hat{y}_{t+h} = \argmax_{y\in\mathbb{Y}} \left\{\Tnorm_{k=1}^N \left\{\sup_{v\in [0, 1]} \left\{\tau_{\mathbf{A_k}|\mathbf{A'}}\overset{\mathrm{T}_2}{\star} I\left(v, \mu_{A_{k\,p+1}}(y)\right)\right\}\right\}\right\}.
+\end{align}
+
+\begin{figure}[thb]
+	\centering
+	\includegraphics[width=\linewidth]{nfs-ftv-and-defuz-meom-with-defuz-demo}
+	\caption{Схема нейро-нечеткой системы с вычислением НЗИ и дефаззификацией по среднему максимуму, а также пример работы дефаззификации.}
+	\label{fig:nfs-ftv-and-defuz-meom-with-defuz-demo}
+\end{figure}
+
+
+
+
+
+%Нейро-сетевая структура изображена на рисунке 
+
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[scale=0.5]{out-mf-with-low-crossing}
+%	\caption{Пример нечетких множеств, удовлетворяющих условию $\mu_{B_k}(y_r) = 0$ для $y \ne r$.}
+%	\label{fig:out-mf-with-low-crossing}
+%\end{figure}
+
+
 
 \textbf{Третья глава} посвящена выработке эффективной параллельной реализации разработанного метода нечеткого вывода на основе нечеткого значения истинности с использованием технологии CUDA. В главе описан ключевые особенности организации вычисления нечеткого вывода при использовании технологии CUDA, параллельный алгоритм свертки НЗИ, особенности реализации методов дефаззификации в нечеткой модели регрессии и схема ускоренного вывода регрессионной нечеткой системы за счет предварительного отбора правил с ближайшими антецедентами.
 
-{\color{red} ДОПИШУ:
+\ul{Параллельный алгоритм свертки НЗИ}
 
-Составлена конфигурация 
+При программной реализации вычисления и свертки НЗИ $\tau_{A_{ki}|A'_i}$ вычисление производится в точках расчетной сетки. \ul{Значение НЗИ по $i$-му входу в точке расчетной сетки $v_j$ в данной работе обозначается $ftv_i[v_j]$ (\textit{ftv --- fuzzy truth value}).} Расчетная сетка размера $D_{ftv}$ задается на пространстве $\mathbb{V}=[0;1]$ мощности $|\mathbb{V}|$.
 
-При дискретизированном вычисление ф. п. свертки НЗИ в некоторой точке расчетной сетки $v_j\in [0,1]$ потребуется просматривать значения НЗИ в отрезке $[v_j, 1]$, то есть имеет вычислительную сложность $O(D_{ftv})$, где $D_{ftv}$ --- число точек расчетной сетки ф. п. НЗИ. Таким образом вычисление свертки НЗИ по формуле (\ref{eqn:ftv-compute-11}) может быть распараллелено по точкам расчетной сетки, а нахождение $\tau_{\mathbf{A_k}|\mathbf{A'}}(v_j)$ использует операцию свертки, которая в имеет ограниченную возможность распараллеливания, но в целом требует большого количества повторных вычислений значений $\tau_{A_{ki}|A'_i}(v_k), v_k\in [v_j, 1]$. В \ref{alg:ftv-reduction} \cite{Karatach2024} предложен алгоритм вычисления свертки НЗИ сразу по всем входам с использованием техники динамического программирования, имеющий линейную зависимость от размера расчетной сетки $D_{ftv}$. Алгоритм приведен на \cref{alg:ftv-reduction}.
-}
+Для нахождения свертки НЗИ по одному правилу можно составить алгоритм на основе формулы (\ref{eqn:ftv-compute-10}). Вычислительная сложность при параллельной реализации такого алгоритма составит $O\left(D_{ftv}^2 \cdot \log{n}\right)$. Значения $ftv_i[v_j]$ необходимо вычислить до запуска алгоритма свертки, что потребует сложности по памяти $O\left(D_{ftv}\cdot n\right)$.
 
 \begin{algorithm}
 	\begin{algorithmic}
-		\Require $ftv_i,\ i=\overline{1,n}$
+		\Require $ftv_i,\ i=\overline{1,n}$ --- это $\tau_{A_{ki}|A'_i}$ дискретизированная в точках $v_j$
 		\State $max\_ftv[i] = 0;$
 		\For{$v_j = 1\dots0$}
 		\State $s \gets \left\{ftv_i[v_j] \mid ftv_i[v_j] >= max\_ftv[i]\right\};$
@@ -329,11 +368,11 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 		\Else
 		\State $r[i] \gets max\_ftv[i];$
 		\EndIf
-		\State $ftv'[v_j] \gets \underset{i}{T_3}\left\{r[i]\right\}$;
+		\State $ftv\_reduced[v_j] \gets \underset{i}{T_3}\left\{r[i]\right\}$;
 		\EndFor
-		\State \Return $ftv'$
+		\State \Return $ftv\_reduced$
 	\end{algorithmic}
-	\caption{Алгоритм свертки НЗИ при $T_1=min$ и $T_3(a, b) \ge T_3(c, d)$ если $a > c$ или $b > d$}
+	\caption{Алгоритм свертки НЗИ при $T_1=min$}
 	\label{alg:ftv-reduction}
 \end{algorithm}
 
@@ -344,9 +383,25 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 	\label{fig:ftvs-reduction-example}
 \end{figure}
 
-Для точного вычисления значения дефаззификации выхода нечеткой системы используется метод оптимизации \textit{Gradient-aware Particle Swarm Optimization}.
+При выполнении работы был разработан параллельный алгоритм свертки НЗИ \cite{Karatach2023b} с вычислительной сложностью $O\left(D_{ftv}\cdot \log{n}\right)$. Алгоритм \ref{alg:ftv-reduction} разработан при допущении, что $T_1 = min$, тогда $\underset{i=\overline{1,n}}{\mathrm{T_1}}v_i = \min_{i=\overline{1,n}} v_i$ в формуле (\ref{eqn:ftv-compute-8}). При работе алгоритм итеративно продвигается от 1 к 0 в области $\mathbb{V}$, как показано на рисунке \cref{fig:ftvs-reduction-example}. На каждой $j$-й итерации вычисляются значения $ftv_i[v_j]$, которые агрегируются в одном вспомагательном массиве \textit{max\_ftv}, который требует сложности по памяти $O\left(n\right)$.
+
+%При дискретизированном вычисление ф. п. свертки НЗИ в некоторой точке расчетной сетки $v_j\in [0,1]$ потребуется просматривать значения НЗИ в отрезке $[v_j, 1]$, то есть имеет вычислительную сложность $O(D_{ftv})$, где $D_{ftv}$ --- число точек расчетной сетки ф. п. НЗИ. Таким образом вычисление свертки НЗИ по формуле (\ref{eqn:ftv-compute-11}) может быть распараллелено по точкам расчетной сетки, а нахождение $\tau_{\mathbf{A_k}|\mathbf{A'}}(v_j)$ использует операцию свертки, которая в имеет ограниченную возможность распараллеливания, но в целом требует большого количества повторных вычислений значений $\tau_{A_{ki}|A'_i}(v_k), v_k\in [v_j, 1]$. В \ref{alg:ftv-reduction} \cite{} предложен алгоритм вычисления свертки НЗИ сразу по всем входам с использованием техники динамического программирования, имеющий линейную зависимость от размера расчетной сетки $D_{ftv}$..
 
 
+\ul{Библиотека с параллельной реализацией нечеткого вывода на основе технологии CUDA}
+
+Для более оперативного проведения экспериментов и практического применения в нагруженных промышленных приложениях была выполнена параллельная реализация нечеткого вывода на основе НЗИ с использованием языка программирования С++ и технологии CUDA. Для удобства использования к разработанному модулю вывода был реализован интерфейс из языка Python с помощью расширения Cython. Схема использования изображена на рисунке \cref{fig:application-schema-diagram}.
+
+Важным достоинством реализации является полная организация вычислений внутри \textit{потоковых мультипроцессоров} графических ускорителей за счет размещения всей базы правил и пакета экземпляров входных данных в разделяемой памяти на чипе потокового мультипроцессора, что предотвращает возникновение простоя арифметико-логических модулей при ожидании загрузки порции данных (например, базы правил) из глобальной памяти графического ускорителя. Также, вычисления организованы внутри группы из 32 CUDA-нитей, что избавляет от необходимости синхронизации внутри CUDA-блока и позволяет использовать инструкции аппаратной свертки массивов чисел внутри таких групп.
+
+В библиотеке реализована дискретизированная дефаззификация по центру тяжести и дефаззификация по среднему максимуму. Для точного вычисления значения дефаззификации выхода нечеткой системы для задачи регрессии используется метод оптимизации \textit{Gradient-aware Particle Swarm Optimization}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\linewidth]{application-schema-diagram}
+	\caption{Схема использования библиотеки для нечеткого моделирования и прогнозирования временных рядов.}
+	\label{fig:application-schema-diagram}
+\end{figure}
 
 \textbf{Четвёртая глава} содержит описание нескольких проведенных экспериментов для оценки характеристик разработанной нечеткой модели прогнозирования временных рядов. Первый эксперимент направлен на подтверждение полиномиальной зависимости времени нечеткого вывода от количества входов нечеткой системы, а также на прирост качества прогнозирования при использовании нечеткого вывода логического типа с несинглтонной фаззификацией. Второй эксперимент был проведен для оценки качества в прикладной задаче прогнозирования временных рядов.
 
@@ -431,6 +486,7 @@ sMAPE = \frac{100\%}{n} \sum_{t=1}^n
 
 По итогу проведенного эксперимента лучший показатель качества прогнозирования по этой метрике на рисунке \cref{fig:mackey-glass-inference-smape} достигается при размере окна запаздывания --- 3 точки. 
 
+%
 Достигнутое в этом случае значение $sMAPE = 8\%$ при количестве правил 30, заметно превосходит точность моделирования незашумленной последовательности Mackey-Glass (M-G) с использованием синглтонной фаззификации со значением $sMAPE \approx 40\%$ в \cite{Pekaslan2020}. Также полученное качество прогнозирования сопоставимо со значением этой метрики при аналогичной конфигурации эксперимента прогнозирования временного ряда M-G в той же публикации, где для достижения точности моделирования временной последовательности $sMAPE \approx 10\%$ используется нечеткая система типа Мамдани, содержащая 184 правила\footnote{Непосредственно в самой статье не указано количество используемых правил. Однако авторами этой статьи опубликован программный код описанного в статье метода, запустив который удалось воспроизвести проводимые авторами эксперименты и восстановить количество правил в их нечетких системах.} в базе правил для не зашумленного временного ряда M-G и 597, 402, 312 правил для различных конфигураций и амплитуды добавленного шума. Данные наблюдения показывают, что \textbf{метод регрессии временных рядов на основе логического нечеткого вывода при несинглтонной фаззификации значительно превосходит качество регрессии с использованием синглтонной фаззификации, а также имеет сопоставимую с методом регрессии Мамдани при несинглтонной фаззификации точность, но при меньшем количестве правил} за счет возможности построения более сложной функции аппроксимации.
 
 Второй эксперимент посвящен применению разработанного метода для прогнозирования помесячного объема транзакций безналичных платежей корпоративным клиентам банка. Источником неопределенности в этом наборе данных является стохастический характер динамики временной последовательности. Поэтому в этом эксперименте также использовалась процедура адаптивной несинглтонной фаззификации. В качестве метрики использовалась RMAE (relative MAE) --- отношение средней абсолютной ошибки к математическому ожиданию средних по рядам клиентов:
@@ -470,45 +526,7 @@ RMAE = \frac{MAE}{\mathbb{E}[\mathbb{E}[s_t]]}.
 	%  * Если не соблюдать порядок "как для \printbibliography", нумерация в `\insertbiblioauthor` будет кривой.
 	%  * Если цитировать каждый источник отдельной командой --- найти некоторые ошибки будет проще.
 	%
-	%% authorvak
-	\nocite{Karatach2023}%
-	\nocite{Karatach2021}%
-	\nocite{vakbib3}%
-	\nocite{vakbib4}%
-	\nocite{vakbib5}%
-	\nocite{vakbib6}%
-	\nocite{vakbib7}%
-	\nocite{vakbib8}%
-	\nocite{vakbib9}%
-	\nocite{vakbib10}%
-	\nocite{vakbib11}%
-	\nocite{vakbib12}%
-	%
-	%% authorwos
-	\nocite{Karatach2024}%
-	\nocite{Sinuk2023}%
-	\nocite{wosbib1}%
-	%
-	%% authorscopus
-	\nocite{Karatach2023b}%
-	%
-	%% authorpatent
-	\nocite{patbib1}%
-	%
-	%% authorconf
-	\nocite{Karatach2020}%
-	\nocite{Karatach2021parallel}%
-	\nocite{Sinuk2022}%
-	\nocite{Karatach2022}%
-	\nocite{confbib2}%
-	%
-	%% authorother
-	\nocite{bib1}%
-	\nocite{bib2}%
-	%
-	%% authorprogram
-	\nocite{Rospatent1}%
-	\nocite{Rospatent2}%
+	
 	
 	\ifnumgreater{\value{usefootcite}}{0}{
 		\begin{refcontext}[labelprefix={}]
@@ -543,535 +561,7 @@ RMAE = \frac{MAE}{\mathbb{E}[\mathbb{E}[s_t]]}.
 		% цитирований внешних источников.
 		\printbibliography[heading=nobibheading, section=0, env=countexternal, keyword=biblioexternal, resetnumbers=true]%
 	}
+	\clearpage
 }
 \ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=true}}{}
 \urlstyle{tt}                               % возвращаем установки шрифта ссылок URL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-
-\section{Постановка задачи нечеткого логического вывода}
-
-Лингвистическая модель представляет собой базу правил вида:
-\begin{equation}
-	\label{eqn:fuz-problem-1}
-	R_k:\ \text{Если}\ x_1\ \text{есть}\ A_{k1}\ \text{и}\ x_2\ \text{есть}\ A_{k2}\ \text{и} \dots \text{и}\ x_n\ \text{есть}\ A_{kn}, \text{то}\ y\ \text{есть}\ B_k,
-\end{equation}
-где $N$ "--- количество нечетких правил, $A_{ki} \subseteq X_i, i=\overline{1,n}, B_k \subseteq Y$"--- нечеткие множества, которые характеризуются функциями принадлежности $\mu_{A_{ki}}(x_i)$ и $\mu_{B_k}(y)$ соответственно; $x_1, x_2,…,x_n$"--- входные переменные лингвистической модели, причем
-\[
-[x_1, x_2, ..., x_n]^T = \mathbf{x} \in X_1 \times X_2 \times \dots \times X_n.
-\]
-
-Символами  $X_i, i=\overline{1,n}$ и $Y$ обозначаются соответственно пространства входных и выходной переменных. Если ввести обозначения $\mathbf{X}=X_1 \times X_2 \times \dots \times X_n$ и $\mathbf{A_k}=A_{k1}\times A_{k2} \times \dots \times A_{kn}$ , причем
-\[
-\mu_\mathbf{A_k}(\mathbf{x}) = \underset{i=\overline{1,n}}{T_1} \mu_{A_{ki}}(x_i),
-\]
-где $T_1$ - произвольная $t$-норма, то правило \ref{eqn:2.1} представляется в виде нечеткой импликации
-\begin{equation}
-	\label{eqn:fuz-problem-2}
-	R_k: \mathbf{A_k} \to B_k, k=\overline{1,N}.
-\end{equation}
-
-Правило $R_k$ можно формализовать как нечеткое отношение, определенное на множестве  $\mathbf{X}\times Y$, т.е. $R_k \subseteq \mathbf{X} \times Y$ - нечеткое множество с функцией принадлежности
-\[
-\mu_{R_k}(\mathbf{x}, y) = \mu_{\mathbf{A_k} \to B_k} (\mathbf{x}, y).
-\]
-
-Модель логического типа определяет задание функции $\mu_{\mathbf{A_k} \to B_k} (\mathbf{x}, y)$ на основе известных функций принадлежности $\mu_{\mathbf{A_k}}(\mathbf{x})$ и $\mu_{B_k}(y)$ с помощью одной из предложенных в [2] функций импликации:
-\[
-\mu_{\mathbf{A_k} \to B_k} (\mathbf{x}, y) = I(\mu_{\mathbf{A_k}}(\mathbf{x}), \mu_{B_k}(y)),
-\]
-где $I$"--- некоторая импликация.
-
-Ставится задача определить нечеткий вывод $B'_k \subseteq Y$ для системы, представленной в виде (\ref{eqn:2.1}), если на входах - нечеткие множества.
-$\mathbf{A'}=A'_1 \times A'_2 \times \dots \times A'_n \subseteq \mathbf{X}$ или $x_1\ \text{есть}\ A'_1\ \text{и}\ x_2\ \text{есть}\ A'_2\ \text{и} \dots \text{и}\ x_n\ \text{есть}\ A'_n$  с соответствующей функцией принадлежности $\mu_{\mathbf{A'}}(\mathbf{x})$, которая определяется как
-\begin{equation}
-	\label{eqn:fuz-problem-3}
-	\mu_{\mathbf{A'}}(\mathbf{x}) = \underset{i=\overline{1,n}}{T_3} \mu_{A'_i}(x_i).
-\end{equation}
-
-Несинглтонный фаззификатор отображает измеренное $x_i=x'_i, i=\overline{1,n}$ в нечеткое число, для которого $\mu_{A'_i}(x'_i) = 1$ и $\mu_{A'_i}(x_i)$ уменьшается от единицы по мере удаления от  $x'_i$.
-В соответствии с обобщенным нечетким правилом modus ponens [2], нечеткое множество $B'_k$ определяется композицией нечеткого множества $\mathbf{A'}$ и отношения $\mathbf{R_k}$, т.е.
-\[
-B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
-\]
-или, на уровне функций принадлежности
-\begin{equation}
-	\label{eqn:fuz-problem-4}
-	\mu_{B'_k}(y|\mathbf{x'}) = \sup_{\mathbf{x}\in \mathbf{X}}\left\{\mu_{\mathbf{A'}}(\mathbf{x'})\overset{T_2}{\star} I(\mu_{\mathbf{A_k}}(\mathbf{x}), \mu_{B_k}(y))\right\}.
-\end{equation}
-
-В (\ref{eqn:fuz-problem-4}) применена условная нотация, так как ввод в нечеткую систему происходит при определенном значении $\mathbf{x}$, а именно $\mathbf{x'}$. Обозначение $\mu_{B'_k}(y | \mathbf{x'})$ показывает, что $\mu_{B'_k}$ изменяется с каждым значением $\mathbf{x'}$. \textbf{Вычислительная сложность выражения (\ref{eqn:fuz-problem-4}) составляет $O(|X_1|\cdot |X_2|\cdot \dots \cdot |X_n|\cdot |Y|)$ т.е. экспоненциальная.}
-
-\section{Использование нечетких систем для прогнозировани временных рядов}
-
-В основной доле публикаций, касающихся использования фаззификации типа non-singleton, рассматривается задача прогнозирования временных рядов. В этих работах используются нечеткие системы типа Мамдани и Такаги-Сугено, тогда как в публикации \cite{} было показано увеличение точности моделирования при использовании нечеткой логической системы с импликацией Лукасевича. Также, согласно , нечеткая логическая система позволяет строить более сложную функцию аппроксимации при меньшем количестве правил. 
-
-Процедура решения задачи прогнозирования временного ряда с использованием нечеткой логической модели состоит из следующих шагов:
-\begin{enumerate}
-	\item Выявление источника неопределенности значений временной последовательности. Источниками неопределенности для временного ряда могут выступать: ошибки измерений (шум, округление), потеря информации при агрегации собранных данных, а также стохастическая природа процесса генерации данных или структурные сдвиги.
-	\item Для выявленного источника неопределенности следует выразить математически способ числовой оценки степени неопределенности, на основе которой можно определить форму и положение функции принадлежности в процедуре фаззификации.
-	\item Выбирается целевая метрика, наиболее корректно оценивающая качество прогнозирования временного ряда в рамках задачи.
-	\item Набор данных временных рядов разбивается на обучающий и тестовый диапазоны.
-	\item Далее в качестве модели прогнозирования временного ряда используется нечеткая логическая система. Часть параметров модели фиксируются интуитивно экспертом исследователем, часть подбирается перебором или, например, с использованием Байесовской оптимизации, а оставшиеся параметры подбираются алгоритмом оптимизации. Для алгоритма оптимизации выбирается оптимизируемая функция, которая может отличаться от целевой метрики.
-	\item Для полученного набора правил проводится оценка качества моделирования на отложенном тестовом диапазоне данных по целевой метрике.
-\end{enumerate}
-
-
-\subsection{Процедура несинглтонной фаззификации временных последовательностей}
-
-\begin{figure}[tb!]
-	\centering
-	\begin{minipage}[b]{0.48\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{noisy-ts-demo-stable-noise}
-		\caption*{а}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.48\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{noisy-ts-demo-mixed-stable-noise}
-		\caption*{б}
-	\end{minipage}
-	\vspace{0.5em}
-	
-	\begin{minipage}[b]{0.48\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{noisy-ts-demo-variable-noise}
-		\caption*{в}
-	\end{minipage}
-	\caption{Примеры временных рядов с различными типами шума: (а) стабильный шум, (б) смешанный стабильный шум, (в) переменный шум. $SNR(dB) = 10 \log_{10} \frac{\sigma^2_s}{\sigma^2_n}$ --- отношение среднеквадратичного значения сигнала $\sigma^2_s$ к среднеквадратичному значению шума $\sigma^2_n$ (ОСШ, \textit{signal-to-noise ratio}) в децибелах. Большее значение $SNR(dB)$ соответствует меньшему уровню шума.}
-	\label{fig:noisy-ts-demo}
-\end{figure}
-
-В задаче прогнозирования временных рядов измеренные значения могут содержать в себе неопределенность, зачастую возникающую из-за шумового искажения измерений. Такая неопределенность может выражена при сопоставлении каждому измеренному значению несинглтонной функции принадлежности нечеткого множества. \textbf{\textit{Концептуально предполагается, что поступающие на вход данные $x$ --- это значение, которое, вероятно, является правильным, но из-за существующей неопределенности соседние значения $x$ также потенциально могут быть правильными. По мере удаления от входного значения $x$ вероятность того, что оно будет правильным уменьшается. Таким образом, несинглтонные нечеткие множества могут эффективно улавливать входную неопределенность}}, не требуя изменений в других частях нечеткой системы, таких как антецеденты или консеквенты правил. Например, если несинглтонная входная ф. п. нечеткого множества, связанная с данным четким значением $x_0$, выражается гауссовой функцией:
-\[
-\mu(x) = \exp \left(x; x_0, b\right),
-\]
-где $b$ --- ширина или стандартное отклонение гауссовой ф. п., которая может быть задана для отражения уровня неопределенности. На практике, когда предполагается, что входные данные системы подвержены низким уровням неопределенности, ширина или значения $b$ соответствующих гауссовских ф. п. интуитивно мала, в то время как большие значения используются для моделирования более высоких уровней неопределенности.
-
-Специфика оценки шумовой неопределенности временной последовательности измерений возникает поскольку, отражающей какую-то характеристику некоторого процесса, которому характерны различные виды переменчивости силы шумового воздействия. Примеры различных видов изменчивости уровня шума изображены на рис. \cref{fig:noisy-ts-demo}. В \cite{Pekaslan2020} предложена обобщенная процедура \textit{адаптивной оценки неопределенности} для сопоставления значений исходной последовательности с несинглтонными ф. п. входных нечетких множества. Данная процедура состоит из четырех шагов, записанных в блоках блок-схемы на рисунке \cref{fig:ns-procedure}:
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{ns-procedure}
-	\caption{Схема обобщенной процедуры адаптивной несинглтонной фаззификации временной последовательности.}
-	\label{fig:ns-procedure}
-\end{figure}
-
-\begin{figure}[thb]
-\centering
-\includegraphics[width=0.9\textwidth]{ns-demo-low-noise}
-\caption{Иллюстрация процедуры несинглтонной фаззификации временного ряда с низким уровнем шума.}
-\label{fig:ns-demo-low-noise}
-\end{figure}
-
-\begin{enumerate}
-	\item \textit{Выбрать размер окна сглаживания:} Определяется размер окрестности точки во временном ряде, по которому выполняется оценка степени неопределенности в точке. Размер окна может быть фиксированным или динамическим (например, при использовании экспоненциально взвешенного скользящего среднего). Например, при использовании датчиков (например, в робототехнике)	размер окна может быть выбран в зависимости от частоты съема датчиков или на основе фиксированного временного интервала. Другой подход, например, в контексте	временных рядов, может заключаться в использовании алгоритма подбора для определения оптимального размера окна.
-	\item \textit{Оценить степень неопределенности внутри окна:} Теперь для оценки степени неопределенности в точке используется сформированный набор наблюдений временной последовательности. В зависимости от условий эксперимента, могут использоваться различные техники оценки неопределенности: статистическая (дисперсия), максимальное правдоподобие, глубокие нейросетевые автоэнкодеры, метод главных компонент \todo{добавить ссылки}. 
-	\item \textit{Задать функцию принадлежности входного нечеткого множества:} Используя оценку степени неопределенности из предыдущего шага, следует задать параметры функции принадлежности входного нечеткого множества, то есть, выполнить непосредственно фаззификацию.
-	\item \textit{Сдвинуть окно сглаживания:} Затем следует выполнить оценку степени неопределенности и фаззификацию для точки, следующей за текущей.
-\end{enumerate}
-
-На рисунке \cref{fig:ns-demo-low-noise} изображено как каждое несинглтонное входное нечеткое множество задается на основе оценки уровня шума, определенного по описанной только что процедуре с применением скользящего окна сглаживания. На этом рисунке показан участок наблюдений с низким уровнем шума приводящий к узкой ширине (среднеквадратичному отклонению) ф. п. входного нечеткого множества. На рисунке \cref{fig:ns-demo-large-noise} уровень шума заметно больше и, как следствие, ф. п. входного нечеткого множества имеет большую ширину.
-
-\begin{figure}[bth]
-	\centering
-	\includegraphics[width=0.9\textwidth]{ns-demo-large-noise}
-	\caption{Иллюстрация процедуры несинглтонной фаззификации временного ряда с высоким уровнем шума.}
-	\label{fig:ns-demo-large-noise}
-\end{figure}
-
-\subsection{Описание нечеткой модели прогнозирования временных рядов на основе нечеткого значения истинности}
-
-Для временного ряда $\mathbf{y_t} = (y_1, \dots, y_T)$, где $T$ --- длина временной последовательности, величина $y_t$ представляет измеренное значение наблюдаемой переменной в момент времени $t=\overline{1,T}$. Ставится задача предсказания значений $\hat{y}_{t+h}$ для заданного горизонта прогнозирования $h$.
-
-Модель временного ряда $f(\cdot)$ порядка $p$ использует последние $p$ значений до момента $t$ для оценки значения:
-\[
-\hat{y}_{t+h} = f(y_{t-p}, \dots, y_t),
-\]
-где $p$ - размер окна запаздывания.
-
-При моделировании временных последовательностей с использованием нейро-нечетких систем каждое значение $y_t\in Y$ фаззифицируется в нечеткое множество $A_t$. Эти нечеткие множества составляют множество термов лингвистической переменной $y_t$ со значениями, определенными на базовом множестве $Y$. Такая система принимает $p$ входов, а правила в ее базе знаний устанавливают нечеткую последовательно-временную связь между заданным окном запаздывания размера $p$ и значением временного ряда в момент $t+h$. Параметр $p$ называется порядком нечеткой системы прогнозирования временных рядов.
-
-База правил в такой системе представляется набором из $N$ правил вида:
-\begin{equation}
-	\begin{aligned}
-		R_k: \textrm{Если }&y_{t-p}\textrm{ есть }A_{k1}\textrm{ и }\dots\textrm{ и } y_{t}\textrm{ есть }A_{kp},&\\
-		\textrm{ то }&y_{t+h}\textrm{ есть }A_{k\,p+h},&k\in\overline{1,N},
-	\end{aligned}
-	\label{eqn:fts-rules}
-\end{equation}
-где каждое нечеткое отношение $\mathrm{T_1}\left\{A_{k1}, \dots, A_{kp}\right\} \rightarrow A_{k\,p+1}$, заданное в правиле $R_k$, выражает единицу \todo{логических} знаний о моделируемом протекающем во времени процессе.
-
-
-\subsection{Построение базы правил}
-
-Для построения базы правил у популярных в литературе типов нечетких систем Мамдани и Такаги-Сугено широко применяется алгоритм формирования правил но из данных \cite{Wang1992}. В контексте задачи прогнозирования временных рядов широкое применение в публикациях получили различные методы, являющиеся развитием или продолжением данного алгоритма \cite{Chellai2022}.
-
-В этих подходах нечеткие множества, задающие значения в правилах, интерпретируются как термы лингвистических переменных. В контексте временных рядов это означает, что область значений изменяющейся во времени величины разбивается на соседствующие отсчеты (интервалы), каждому из которых соответствует терм лингвистической переменной.
-
-\begin{enumerate}
-	\item Границы пространство значений временной последовательности $U = [D_{min} - \delta_1, D_{max} + \delta_2]$ задаются на основе минимального $D_{min}$ и максимального $D_{max}$ присутствующих в данных значений с некоторыми отступами $\delta_1$ и $\delta_2$ соответственно.
-	\item Пространство $U$ разбивается на $m$ равных отсчетов $u_1, u_2, \dots, u_m$.
-	\item Набор соответствующих отсчетам нечетких множеств формирует множество термов лингвистических переменных $y_t, t=\overline{1, T}$.
-	\item Затем каждому измеренному значению ставится в соответствие терм лингвистической переменной с наибольшей степенью истинности. Из последовательностей таких термов формируется набор правил --- набор нечетких отношений.
-\end{enumerate}
-
-Очевидным недостатком такого примитивного способа разбиения пространства значений является несоответствие часто отличному от равномерного распределению функции плотности вероятности этих значений. База правил формировалась напрямую из экземпляров данных, посредством сопоставления каждому экземпляру комбинации термов, имеющих наибольшую степень принадлежности по входам в совокупности.
-
-%Развитие способов обучения нечетких систем в рамках задачи прогнозирования временных рядов проходило взаимосвязано с адаптацией нечеткого моделирования как непосредственно к задаче регрессии временных рядов, так и к задачам моделирования другого рода. Ранние подходы следовали более типовому набору шагов при построении нечетких систем \cite{Chellai2022}. При формирования набора термов лингвистической переменной $\tilde{y}$ ее пространство значений ограничивалось минимальным и максимальными значениями временного ряда и разбивалось на накладывающиеся друг на друга участки, каждый из которых составлял носитель соответствующего нечеткого множества из набора термов. В широко цитируемом подходе Chen-а \cite{Chen1996} разбиение производилось на равные отрезки. Очевидным недостатком такого примитивного способа разбиения пространства значений является несоответствие часто отличному от равномерного распределению функции плотности вероятности этих значений. База правил формировалась напрямую из экземпляров данных, посредством сопоставления каждому экземпляру комбинации термов, имеющих наибольшую степень принадлежности по входам в совокупности, что соответствует довольно популярному из-за своей простоты методу Wang-а \cite{Wang1992}. Такой способ построения базы правил нечеткой системы до сих пор популярен при исследовании нечетких моделей временных рядов и других данных, когда необходимо сравнить качество непосредственно моделирования при том же наборе данных и способе построения базы правил.
-
-%В более поздних способах стало более распространенным формирование базы правил с соответствующими терм-множествами из данных, то есть подбор параметров функций принадлежности термов выполняется одновременно с формированием набора правил. Этот подходя является более простым и точным для выделение шаблонных отрезков из временных рядов, особенно в случаях сложной функции плотности распределения значений временного ряда, когда проявляются ограничения в увеличении точности нечеткой системы при разбиения базового множества лингвистической переменной $\tilde{y}$. Таким образом одни и те же методы можно применять для разбиения пространства значений временных рядов (одно измерение) или для разделения пространства окон временных рядов (когда последовательность значений в окне временного ряда интерпретируется как точка в $n$-мерном пространстве). В последнем случае посредством разбиения пространства окон временного ряда может осуществляться формирование базы правил.
-
-%Распространенной группой таких методов являются подходы на основе различных алгоритмов кластеризации \cite{Lucas2021}:  \textit{k}-средних, алгоритмы учитывающие плотность распределения точек, агломеративная кластеризация.
-
-%Эволюционные подходы, например, Particle Swarm Optimization (PSO)\cite{Davari2009} могут обеспечить оптимальную настройку параметров нечеткой модели при сложной конфигурации обучающего набора данных. 
-
-%Основная сложность использования этих методов состоит в необходимости выполнять большое количество вычислений функции приспособленности на всем обучающем наборе данных на каждой итерации для всех особей популяции. Поэтому для сокращения времени оценки параметров модели стараются минимизировать набор параметров, для которых применяются методы глобальной оптимизации.
-
-Чаще используются подходы построения базы правил, где значения термов в каждом правиле являются индивидуальным, то есть подбираются параметры нечетких множеств в правилах с уходом от лингвистической интерпретации.
-
-Тогда каждое такое нечеткое множество в каждом правиле будет определяться индивидуальными значениями параметров функции принадлежности, а для задания всей базы правил требуется задание матрицы параметров $\theta_{\mathbf{R}}$
-
-\begin{equation*}
-	\theta_{\mathbf{R}} = \begin{bmatrix}
-		\theta_{\mu_{\mathbf{R_1}}}\\
-		\vdots\\
-		\theta_{\mu_{\mathbf{R_N}}}
-	\end{bmatrix} = \begin{bmatrix}
-		\theta_{\mu_{A_{11}}} & \theta_{\mu_{A_{12}}} & \dots & \theta_{\mu_{A_{1n}}} & \theta_{\mu_{B_{1}}} \\
-		\vdots & \vdots & \ddots & \vdots & \vdots \\
-		\theta_{\mu_{A_{N1}}} & \theta_{\mu_{A_{N2}}} & \dots & \theta_{\mu_{A_{Nn}}} & \theta_{\mu_{B_{N}}} \\
-	\end{bmatrix}.
-\end{equation*}
-
-При использовании гауссовых функций принадлежности c параметрами $a$ и $b$ для нечетких множеств в правилах матрица параметров может быть записана следующим образом:
-
-\begin{equation*}
-	\theta_{\mathbf{R}} = \begin{bmatrix}
-		\langle a_{\mu_{A_{11}}}, b_{\mu_{A_{11}}}\rangle & \langle a_{\mu_{A_{12}}}, b_{\mu_{A_{12}}}\rangle & \dots & \langle a_{\mu_{A_{1n}}}, b_{\mu_{A_{1n}}}\rangle & \langle a_{\mu_{B_{1}}}, b_{\mu_{B_{1}}}\rangle \\
-		\vdots & \vdots & \ddots & \vdots & \vdots \\
-		\langle a_{\mu_{A_{N1}}}, b_{\mu_{A_{N1}}}\rangle & \langle a_{\mu_{A_{N2}}}, b_{\mu_{A_{N2}}}\rangle & \dots & \langle a_{\mu_{A_{Nn}}}, b_{\mu_{A_{Nn}}}\rangle & \langle a_{\mu_{B_{N}}}, b_{\mu_{B_{N}}}\rangle \\
-	\end{bmatrix}.
-\end{equation*}
-
-Для подбора параметров функций принадлежности в наборе правил используется оптимизация этих параметров на основе набора данных, а критерием оптимизации является минимизация метрики среднеквадратичной ошибки (RMAE - Root Mean Square Error). В качестве такого алгоритма выбран \textit{метод роя частиц (Particle Swarm Optimization - PSO)}, который приведен на рисунке Алгоритм \ref{alg:pso}. Частицы в PSO используют как собственный опыт, так и опыт соседей, сглаживая свою траекторию за счет использования промежуточного вектора скорости для каждой точки, дающего эффект инерции. Это позволяет алгоритму избегать застревания в локальных минимумах. В контексте оптимизации вектора параметров функций принадлежности базы правил большой размерности (часто, сотни параметров), PSO хорошо выполняет оптимизацию по всем размерностям одновременно. При работе алгоритм сперва исследует широкое пространство решений, а затем сосредоточиться на его уточнении, что также позволяет бороться с попаданием в локальный оптимум. Основные параметры --- количество частиц $S$, вес инерции $\omega$ и коэффициенты влияния текущего локального $\phi_l$ и глобального $\phi_g$ оптимума.
-
-\begin{algorithm}[p]
-	\caption{Particle Swarm Optimization (PSO) для подбора параметров ф. п. в правилах на основе эталонных данных}
-	\label{alg:pso}
-	\begin{algorithmic}[1]
-		\Require
-		\Statex $S$ --- количество частиц
-		\Statex $max\_iter$ --- количество итераций
-		\Statex $\omega$ --- вес инерции
-		\Statex $\phi_l, \phi_g$ --- коэффициенты влияния локального и глобального оптимума
-		\Statex $b_{lo}, b_{up}$ --- вектора нижних и верхних граничных значений вектора параметров частицы $\theta_p$
-		\Statex $D_{l=1}^M$ --- набор эталонных данных
-		\Statex $f(\theta)$ --- целевая функция приспособленности для набора данных $D$
-		
-		\Statex \textbf{Инициализация:}
-		\For{каждой частицы $p = 1, \dots, S$}
-		\State Инициализировать позицию частицы по равномерному распределению: $\theta_p \sim U(b_{lo}, b_{up})$
-		\State Установить $\theta^l_p \gets \theta_p$ \Comment{Локальный оптимум частицы}
-		\State Инициализировать скорость по равномерному распределению: $v_p \sim U(-|b_{up}-b_{lo}|, |b_{up}-b_{lo}|)$ \Comment{Вектор скорости $v_p$ имеет такую же размерность как и вектор параметров $\theta_p$}
-		\EndFor		
-		\State $\theta^g \gets \argmin_{p} f(\theta^l_p)$ \Comment{Инициализация глобального оптимума}
-		
-		\Statex \textbf{Основной цикл:}
-		\For{$i = 1, \dots, max\_iter$}
-		\For{каждой частицы $p = 1, \dots, S$}
-		\State Сгенерировать случайные $r_l, r_g \sim U(0,1)$
-		\State Обновить скорость:
-		\State \quad $v_p \gets \omega v_p + \phi_l r_l (\theta^l_p - \theta_p) + \phi_g r_g (\theta^g - \theta_p)$
-		\State Обновить позицию:  $\theta_p \gets \theta_p + v_p$
-		\If{$f(\theta_p) < f(\theta^l_p)$}
-		\State Обновить локальный оптимум: $\theta^l_p \gets \theta_p$
-		\If{$f(\theta^l_p) < f(\theta^g)$}
-		\State Обновить глобальный оптимум: $\theta^g \gets \theta^l_p$
-		\EndIf
-		\EndIf
-		\EndFor
-		\EndFor
-		
-		\State \textbf{Возврат} $\theta^g$ \Comment{Найденный глобальный оптимум}
-	\end{algorithmic}
-\end{algorithm}
-
-\section{Постановка задачи}
-
-\section{Применение нечекого значения истинности}
-
-Определив НЗИ $CP(\mathbf{A_{k}, \mathbf{A'}})$ для антецедента правила $R_k$ согласно (\ref{eqn:ftv-compute-12}) и (\ref{eqn:ftv-compute-8}), можно переписать правило $R_k$ в виде:
-\begin{align*}
-	R_k: \textrm{Если }&CP(\mathbf{A_{k}, \mathbf{A'}}),&\\
-	\textrm{ то }&y_{t+1}\textrm{ есть }A_{k\,p+1},&k\in\overline{1,N}.
-\end{align*}
-
-
-\section{Описание вычислительного эксперимента для оценки характеристик применения разработанного метода к задаче регрессии временных рядов}
-
-Для подтверждения утверждения о полиномиальной (линейной) временной сложности нечеткого вывода на основе нечеткого значения истинности и провести сравнение использования логического нечеткого вывода Л. Заде в задаче, где актуален учет нечеткости данных, с подходами Мамдани и Такаги-Сугено, следует провести несколько вычислительных экспериментов и выполнить оценку характеристик разработанного подхода в этой задаче.
-
-Для простоты сравнения с результатами публикаций, использующих несинглтонную фаззификацию, для проведения экспериментов будет использоваться синтетический набор данных Mackey-Glass (M-G). Набор данных с такими же значениями параметров уравнения, как в этих публикациях: $\tau = 30, \beta = 0.2, \gamma = 0.1$. Так же была сгенерирована последовательность из 2000 точек на участке от $t=-999$ до $t=1000$. Первые 1000 точек так же выбрасываются как зона стабилизации процесса $x(t)$, а следующие $T=1000$ точек на участке $t=\overline{1,1000}$ используются в эксперименте.
-
-\begin{equation}
-	\frac{dx(t)}{dt} = \beta\frac{x(t-\tau)}{1+x(t-\tau)^n}-\gamma x(t)
-	\label{eqn:mackey-glass-definition}
-\end{equation}
-
-
-В данном эксперименте используется адаптивный метод оценки зашумленности в точке $t$ временной последовательности. Для этого сперва вычисляется последовательность разностей $d_t$ соседних значений временной последовательности (\ref{eqn:mackey-glass-definition}).
-
-\begin{align}
-	\label{eqn:mackey-glass-seq-diff}
-	d_1 &= d_2, \\
-	d_t &= \frac{1}{\sqrt{2}}(x_t - x_{t-1}),
-\end{align}
-где $t\in[1;T]$.
-
-А затем для каждой точки вычисляются значения среднеквадратичных отклонений $\hat{\sigma}_t$ разностей соседних точек (\ref{eqn:mackey-glass-seq-diff-std}), но, в отличии от \cite{Pekaslan2020}, вычисление производится не внутри скользящего окна фиксированного размера, а на основе формулы экспоненциально взвешенного скользящего среднего:
-
-\begin{align}
-	\hat{\sigma}^2_t &= (1-\alpha) \hat{\sigma}^2_{t-1} + \alpha (d_t - \hat{d}_t) \notag \\
-			  		 &= \sum_{p=1}^t \alpha (1-\alpha)^{t-p} (d_p - \hat{d}_p)^2, \label{eqn:mackey-glass-seq-diff-var-iterative} \\
-	\hat{\sigma}_t &= \sqrt{\hat{\sigma}^2_t}, \label{eqn:mackey-glass-seq-diff-std}
-\end{align}
-где $\hat{d}_t$ --- является экспоненциально взвешенным скользящим средним значений $d_t$:
-\begin{align}
-	\hat{d}_t &= (1-\alpha) \hat{d}_{t-1} + \alpha d_t \notag \\
-	&= \sum_{p=1}^t \alpha (1-\alpha)^{t-p} d_p. %\notag
-	\label{eqn:mackey-glass-seq-diff-mean}
-\end{align}
-
-Таким образом, в данном способе оценки уровня шума в измеренных значениях \cite{Rank1999} сперва с помощью разностного оператора выполняется преобразование в стационарный временной ряд (исключение компоненты тренда) для более точной оценки амплитуды шума, а затем среднеквадратичное отклонение в экспоненциально взвешенной области отражает резкие изменения значений стационарного временного ряда относительно сглаженного центра в данной точке $t$.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.3]{mackey-glass-ewma-example}
-	\caption{График сгенерированной последовательности Mackey-Glass $x(t), t\in[0;999]$ с параметрами $\tau = 30, \beta = 0.2, \gamma = 0.1$, график разностей соседних точек $d_t$ последовательности $x(t)$, график $\hat{d}_t$ с наложением экспоненциально взвешенного сглаживания на последовательность разностей и график экспоненциально взвешенного скользящего среднеквадратичного отклонения разностей $\hat{\sigma}_t$. На вложенном изображении участка $t\in[650,750]$ яркостью красного цвета показано значения весового коэффициента $\alpha (1-\alpha)^{t-p}, p=\overline{1,t_0}$ из формулы (\ref{eqn:mackey-glass-seq-diff-var-iterative}) при $\alpha = 0.2$, определяющего степень вклада предыдущих значений $(d_p - \hat{d}_p)^2$ в значение $\hat{\sigma}^2_t$ в точке $t$. Чем меньше значение $\alpha$, тем слабее <<доверие>> к одному лишь значению $d_t$ и тем больше предыдущих значений $d_p$ делают вклад в сглаженное значение.}
-	\label{fig:mackey-glass-ewma-example}
-\end{figure}
-
-Для каждого значения временной последовательности $x(t)$ в результате фаззификации было получено нечеткое множество $A'_t$ с гауссовой функцией принадлежности с параметрами $a$ и $b$:
-\begin{equation*}
-	\begin{aligned}
-		\mu_{A'_t}(y_t) &= gauss(y_t; a, b), \\
-		\theta_{\mu_{A'_t}} &= \langle a, b \rangle = \langle x(t), \phi\,\hat{\sigma}_t\rangle,
-	\end{aligned}
-\end{equation*}
-где параметр среднеквадратичного отклонения равен ранее вычисленному значению $\hat{\sigma}_t$ с коэффициентом $\phi = 0.3$.
-
-
-
-Для построения базы правил использовались точек в диапазоне от $t=1$ до $t=700$ (обучающий диапазон) из ранее отложенных $T=1000$ точек, а для оценки качества итоговой системы были взяты последние 300 точек в диапазоне от $t=701$ до $t=1000$ (тестовый диапазон). Диапазоны последовательности этих точек были составлены обучающий и тестовый наборы временных отрезков длины $p+1$ с использованием скользящего окна, где размер окна запаздывания $p$ выбирался среди значений $3,5,7,9,11$, а горизонт прогнозирования установлен $h=1$. В нечетком выводе использовалась импликация Лукасевича, T-нормы --- min и метода дефаззификации средний максимум (MeOM) с количеством точек алгоритма Gradient-aware PSO --- 100 и количеством итераций --- 100.
-
-Конфигурация вычислительной системы: центральный процессор --- AMD Ryzen 9 5900HX (8 ядер, 16 потоков, базовая частота 3.3 ГГц, кэш L3 16 МБ); оперативная память --- 32 ГБ DDR4-3200 (двухканальный режим); графический процессор --- NVIDIA GeForce RTX 3080 Laptop GPU с 16 ГБ видеопамяти (CUDA 12.1, compute capability --- 8.6).
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.37]{mackey-glass-pso-optimization}
-	\caption{Графики изменений среднего и лучшего по популяции значений оптимизируемой функции приспособленности при числе входов нечеткой системы ---7, количестве правил --- 20, размере набора точек алгоритма PSO --- 50 и количестве итераций --- 50.}
-	\label{fig:mackey-glass-pso-optimization}
-\end{figure}
-
-Динамика среднего (медианного) и лучшего по набору точек значений оптимизируемой метрики в процессе PSO-оптимизации базы правил для указанных выше значений набора гиперпараметров изображена на рисунке \cref{fig:mackey-glass-pso-optimization}.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.7]{mackey-glass-inference-duration}
-	\caption{График длительности выполнения параллельной реализации нечеткого вывода для обучающего и тестового набора данных при количестве правил $N=10$.}
-	\label{fig:mackey-glass-inference-duration}
-\end{figure}
-
-После проведенного вычислительного эксперимента были получены показатели удельного (на одну точку из набора точек одной итерации алгоритма PSO) времени работы алгоритма нечеткого вывода на основе НЗИ на обучающем наборе данных и времени работы на тренировочном наборе данных для различного размера окна запаздывания, изображенные на рисунке \cref{fig:mackey-glass-inference-duration}. На этом рисунке наблюдается линейный рост времени выполнения алгоритма с увеличением количества входов нечеткой системы, что \textbf{подтверждает утверждение о полиномиальной зависимости временной сложности метода нечеткого вывода на основе НЗИ от количества входов}. Временные показатели алгоритма нечеткого вывода для тестового набора данных также включают значительную временную компоненту задержки, вызванную в основном процессом инициализации библиотек при первичном запуске нечеткого вывода для уже готового набора правил, тогда как на обучающем наборе данных получены значения времени работы непосредственно алгоритма нечеткого вывода с амортизированной компонентой задержки.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.7]{mackey-glass-inference-smape}
-	\caption{График значений метрики sMAPE на обучающем и тестовом наборах данных при различных размерах окна запаздывания, количестве правил --- 30.}
-	\label{fig:mackey-glass-inference-smape}
-\end{figure}
-
-С целью сравнения с альтернативными нечеткими моделями на примере решения этой же задачи при наиболее близких условиях для полученной в результате экспериментов нечеткой системы затем выполнена оценка точности прогнозирования по метрике \textit{Symmetric Mean Absolute Percentage Error (sMAPE)}, определяемой формулой:
-\[
-sMAPE = \frac{100\%}{n} \sum_{t=1}^n 
-\frac{|y_t - \hat{y}_t|}{\tfrac{|y_t| + |\hat{y}_t|}{2}},
-\]
-где $y_t$ и $\hat{y}_t$ соответствуют истинному и предсказанному значению в момент времени $t$.
-
-
-
-
-Значение этой метрики для разных размеров окна запаздывания приведены на рисунке \cref{fig:mackey-glass-inference-smape}, где лучший показатель качества прогнозирования временного ряда по метрике sMAPE достигается при размере окна запаздывания --- 3 точки. Тогда соответствующая матрица параметров базы правил имеет вид размера $30\times 4$:
-\begin{equation*}
-	\theta^*_{\mathbf{R}} = \begin{bmatrix}
-		\langle a_{\mu_{A_{1\,1}}}, b_{\mu_{A_{1\,1}}}\rangle & \langle a_{\mu_{A_{1\,2}}}, b_{\mu_{A_{1\,2}}}\rangle & \langle a_{\mu_{A_{1\,3}}}, b_{\mu_{A_{1\,3}}}\rangle & \langle a_{\mu_{B_{1}}}, b_{\mu_{B_{1}}}\rangle \\
-		\vdots & \vdots & \vdots & \vdots \\
-		\langle a_{\mu_{A_{30\,1}}}, b_{\mu_{A_{30\,1}}}\rangle & \langle a_{\mu_{A_{30\,2}}}, b_{\mu_{A_{30\,2}}}\rangle & \langle a_{\mu_{A_{30\,3}}}, b_{\mu_{A_{30\,3}}}\rangle & \langle a_{\mu_{B_{30}}}, b_{\mu_{B_{30}}}\rangle \\
-	\end{bmatrix}.
-\end{equation*}
-
-Достигнутое в этом случае значение $sMAPE = 8\%$ при количестве правил 30, заметно превосходит точность моделирования незашумленной последовательности Mackey-Glass (M-G) с использованием синглтонной фаззификации со значением $sMAPE \approx 40\%$ в \cite{Pekaslan2020}. Также полученное качество прогнозирования сопоставимо со значением этой метрики при аналогичной конфигурации эксперимента прогнозирования временного ряда M-G в той же публикации, где для достижения точности моделирования временной последовательности $sMAPE \approx 10\%$ используется нечеткая система типа Мамдани, содержащая 184 правила\footnote{Непосредственно в самой статье не указано количество используемых правил. Однако авторами этой статьи опубликован программный код описанного в статье метода, запустив который удалось воспроизвести проводимые авторами эксперименты и восстановить количество правил в их нечетких системах.} в базе правил для не зашумленного временного ряда M-G и 597, 402, 312 правил для различных конфигураций и амплитуды добавленного шума. Данные наблюдения показывают, что \textbf{метод регрессии временных рядов на основе логического нечеткого вывода при несинглтонной фаззификации значительно превосходит качество регрессии с использованием синглтонной фаззификации, а также имеет сопоставимую с методом регрессии Мамдани при несинглтонной фаззификации точность, но при меньшем количестве правил} за счет возможности построения более сложной функции аппроксимации.
-
-\section{Применение разработанной нечеткой модели в задаче прогнозирования объема транзакций по безналичным платежам для клиентов банка}
-
-Теперь применим разработанную модель для решения задачи прогнозирования временной последовательности в прикладной области для сравнительной оценки качества прогнозирования данной нечеткой моделью с другими подходами в этой задаче.
-
-Была выбрана задаче прогнозирования помесячной транзакционной активности (объема транзакций) клиентов банка по одному из продуктов банка --- безналичные платежи (более распространенное название --- эквайринг). Данная услуга банка позволяет юридическим лицам принимать безналичные платежи от своих клиентов с помощью банковских карт и других платежных систем, таких как мобильные платежи (например, Mir Pay, Google Pay, Apple Pay) или QR-коды. Различные виды безналичной оплаты продемонстрированы на рисунке \cref{fig:acquiring-examples}. Каждая разновидность способа безналичной оплаты соответствует отдельному типу транзакций.
-
-\begin{figure}[t]
-	\centering
-	\begin{minipage}[b][][b]{0.3\textwidth}
-		\centering
-		\includegraphics[height=3.5cm]{acquiring-pos-terminal} \\ POS-терминал
-		%\caption*{POS-терминал}
-	\end{minipage}
-	%\hfill %\hspace{0.02\textwidth}
-	\begin{minipage}[b][][b]{0.33\textwidth}
-		\centering
-		\includegraphics[height=3.5cm]{acquiring-internet} \\ Интернет-эквайринг
-		%\caption*{Интернет-эквайринг}
-	\end{minipage}
-	%\hfill %\hspace{0.02\textwidth}
-	\begin{minipage}[b][][b]{0.3\textwidth}
-		\centering
-		\includegraphics[height=3.5cm]{acquiring-qr-code} \\ QR-код
-		%\caption*{QR-код}
-	\end{minipage}
-	\vfill
-	\caption{Различные виды безналичной оплаты.}
-	\label{fig:acquiring-examples}
-\end{figure}
-
-\todo{Описать бизнес-смысл построения прогноза по данному продукту}
-
-Временной ряд клиента в этом наборе данных имеет вид помесячных значений объемов транзакций $s_t$, каждое из которых получено в результате агрегации (складывания) сумм отдельных транзакций $x_{t\,i}$ за месяц:
-\begin{equation*}
-	s_t = \sum_{i=1}^{N_t} x_{t\,i},
-\end{equation*}
-где $N_t$ --- количество транзакций за месяц $t$.
-
-%Сумма каждой транзакции $x_{t\,i}$ является полностью четким достоверным значением и, как следствие, помесячные агрегации $s_t$ являются четкими значениями, не подверженными шумовому воздействия или другой неопределенности непосредственно самих значений месячных объемов транзакций. Однако, в зависимости от рода деятельности клиента банка, сам временной ряд может иметь разную степень стохастичности, возникающей из-за скрытой многофакторной неопределенности при деятельности клиента, отражающейся в размере волатильности (динамики изменчивости объема) цепочки отдельных транзакций.
-%
-%Волатильность временного ряда в точке $t$ можно оценить с помощью описанного в предыдущем эксперименте метода оценки среднеквадратичного отклонения в точке $t$ \cite{} с использованием формул (\ref{eqn:mackey-glass-seq-diff}),  (\ref{eqn:mackey-glass-seq-diff-mean}), (\ref{eqn:mackey-glass-seq-diff-var-iterative}) и (\ref{eqn:mackey-glass-seq-diff-std}). Среднеквадратичное отклонение $\sigma_{s_t|N_t}$ временного ряда помесячных агрегаций в момент $t$ может быть выражено через среднеквадратичное отклонение $\sigma_{x_t}$ для $N_t$ отдельных транзакций внутри месяца c использованием соответствующих дисперсий:
-%\begin{equation*}
-%	\begin{aligned}
-%		\sigma^2_{s_t|N_t} = N_t \sigma^2_{x_{t}}.\\
-%	\end{aligned}
-%\end{equation*}
-%
-%Тогда волатильность транзакций внутри месяца можно выразить:
-%\begin{equation*}
-%	\sigma_{x_t} = \sqrt{\frac{\sigma^2_{s_t|N_t}}{N_t}}
-%\end{equation*}
-%
-%В \cite{Green2015} подмечено: при низкой волатильности --- более простые и плавные модели часто превосходят сложные, но с высокой волатильностью справляются только сложные модели с высокой емкостью знаний и учитывающие волатильность. Как было показано в первой главе при увеличении ширины функции принадлежности нечеткого множества входного значения увеличивается количество активируемых окрестных правил нечеткой системы. То есть при малой ширине входной ф. п. выходное значение получается в узкой области небольшого количества правил, а при большой ширине входной ф. п. задействуется большое количество правил в широкой области, то есть по сути повышается емкость нечеткой системы. Тогда волатильность объема транзакций внутри месяца $t$ может быть использована для задания ширины гауссовой функции принадлежности в процедуре фаззификации:
-%\begin{equation*}
-%	\begin{aligned}
-%		\mu_{A'_t}(y_t) &= gauss(y_t; a, b), \\
-%		\theta_{\mu_{A'_t}} &= \langle a, b \rangle = \langle s_t, \phi\,\sigma_{x_t}\rangle,
-%	\end{aligned}
-%\end{equation*}
-%где коэффициент $\phi = 0.3$.
-
-В зависимости от рода деятельности клиента банка, сам временной ряд может иметь разную степень стохастичности, возникающей из-за скрытой многофакторной неопределенности при деятельности клиента. Степень стохастичности временного ряда в точке $t$ можно оценить с помощью описанного в предыдущем эксперименте метода оценки среднеквадратичного отклонения в точке $t$ с использованием формул (\ref{eqn:mackey-glass-seq-diff}),  (\ref{eqn:mackey-glass-seq-diff-mean}), (\ref{eqn:mackey-glass-seq-diff-var-iterative}) и (\ref{eqn:mackey-glass-seq-diff-std}).
-
-В \cite{Green2015} подмечено: для стабильных временных рядов --- более простые и плавные модели часто превосходят сложные, но с высокой степенью стохастичности справляются только сложные модели с большой емкостью знаний и учитывающие эту стохастичность. Как было показано в первой главе при увеличении ширины функции принадлежности нечеткого множества входного значения увеличивается количество активируемых окрестных правил нечеткой системы. То есть при малой ширине входной ф. п. выходное значение получается в узкой области небольшого количества правил, а при большой ширине входной ф. п. задействуется большое количество правил в широкой области, то есть по сути повышается емкость нечеткой системы. Тогда степень стохастичности месячного объема транзакций $t$ может быть использована для задания ширины гауссовой функции принадлежности в процедуре фаззификации:
-\begin{equation*}
-	\begin{aligned}
-			\mu_{A'_t}(y_t) &= gauss(y_t; a, b), \\
-			\theta_{\mu_{A'_t}} &= \langle a, b \rangle = \langle s_t, \phi\,\sigma_{s_t}\rangle,
-		\end{aligned}
-\end{equation*}
-где коэффициент $\phi = 0.3$.
-
-\begin{figure}[ht]
-	\centering
-	\begin{minipage}[b]{0.48\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{acquiring-values-hist}
-		\caption*{Распределение значений $\Exp{s_t}$}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.48\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{acquiring-log-hist}
-		\caption*{Распределение значений $\Exp{\log{s_t}}$}
-	\end{minipage}
-	\caption{Гистограммы математических ожиданий временных рядов.}
-	\label{fig:acquiring-values-hists}
-\end{figure}
-
-Исходный набор данных составлен из помесячных объемов транзакций за период с 01-01-2021 по 31-12-2023 для 2500 клиентов. Из набора данных были удалены временные ряды для клиентов, состоящие только из нулевых значений, то есть клиенты без активности по продукту банка. В результате остались временные ряды для 1731 активных клиентов. Образцы временных рядов приведены на рисунке \ref{}. Случайная величина средних по клиенту $\mathbb{E}[s_t]$ имеет экспоненциальное распределение, как показано на рисунке \cref{fig:acquiring-values-hists}. Для выравнивания этого распределения и для достижения более равномерного распределения пространства правил нечеткой системы было выполнено логарифмирование значений $s_t$ временных рядов.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.6]{acquiring-train-test-split}
-	\caption{Разбиение временных рядов на обучающий и тестовый диапазоны.}
-	\label{fig:acquiring-train-test-split}
-\end{figure}
-
-По требованиям задачи последние 12 месяцев были отложены в качестве прогнозируемых значений тестового диапазона, а период с 01-2021 по 12-2022 использовался в качестве обучающего диапазона для формирования набора обучающих окон с размером запаздывания $p = 3,6,9,12$ и горизонтом прогнозирования $h=1$ и $h=3$. Данный способ разбиения показан на рисунке \cref{fig:acquiring-train-test-split}. Для оценки качества прогнозирования использовалась целевая метрика RMAE, которая дает возможность сравнить насколько среднее значение ошибки высоко относительно среднего прогнозируемого значения:
-\[
-RMAE = \frac{MAE}{\mathbb{E}[\mathbb{E}[s_t]]} = \frac{\sum_{t=1}^n |y_t - \hat{y}_t|}{\sum_{t=1}^n y_t},
-\]
-где $y_t$ и $\hat{y}_t$ соответствуют истинному и предсказанному значению в момент времени $t$.
-
-Обучение производилось при количестве правил нечеткой системы --- 50, точек PSO-алгоритма --- 50, количестве итераций --- 50. Как и в предыдущем эксперименте использовалась импликация Лукасевича и дефаззификация по среднему максимуму (MeOM) с теми же параметрами алгоритма Gradient-aware PSO. В качестве функции приспособленности выступала метрика среднеквадратичной ошибки (RMSE).
-
-% \begin{figure}
-% 	\centering
-% 	%\includegraphics[scale=0.7]{mackey-glass-inference-smape}
-% 	\caption{График значений метрики MAE на обучающем и тестовом наборах данных при различных размерах окна запаздывания, количестве правил --- 50.}
-% 	\label{fig:acquiring-inference-mae}
-% \end{figure}
-
-Лучшее качество прогнозирования для разработанной модели NSFLS+FTV (Non-singleton Fuzzy Logical System с использованием Fuzzy Truth Value) удалось достичь при размере окна запаздывания --- 3 точки. Для сравнения с другими подходами, обычно применяемыми при решении такой задачи, в таблице \ref{tab:acquiring-metric-comparison} приведены значения метрики качества при прогнозирования на 1 и 3 месяца для моделей: наивная, ARIMA, градиентный бустинг, многослойный перцептрон, DeepAR. 
-
-\begin{table}[t]
-	\centering
-	\begin{threeparttable}% выравнивание подписи по границам таблицы
-		\caption{Значения метрики MAE относительно $\mathbb{E}[\mathbb{E}[s_t]]$ для разработанной NSFLS+FTV и альтернативных моделей.}%
-		\label{tab:acquiring-metric-comparison}%
-		\begin{tabular}{| c | c | c |}
-			\toprule
-			\multirow{2}{*}{Модель} & \multicolumn{2}{|c|}{Relative Mean Absolute Error (RMAE)} \\
-			\cmidrule{2-3} & Прогноз на 1 мес. & Средняя за 3 мес. \\
-			\midrule
-			Наивная (среднее по ряду) & 0.166 & 0.204 \\
-			ARIMA & 0.187 & 0.230  \\
-			Градиентный бустинг & 0.152  & 0.187 \\
-			Многослойный перцептрон & 0.128 & 0.157  \\
-			Рекуррентная нейросеть (DeepAR) & 0.188	 & 0.231 \\
-			\midrule
-			NSFLS+FTV & 0.112  & 0.147  \\ % +20000
-			\bottomrule
-		\end{tabular}%
-	\end{threeparttable}
-\end{table}
-
-Стоит описать некоторые детали применения и используемую конфигурацию других моделей:
-\begin{itemize}
-	\item В наивной модели прогноз формируется как среднее значение в окне запаздывания.
-	\item При использовании ARIMA для каждого клиента обучалась отдельная авторегрессионная модель.
-	\item В качестве градиентного бустинга использовался CatBoostRegressor. На вход модели подавались признаки для различных размеров окон запаздывания: 3, 6, 9 и 12. Для каждого прогнозного месяца была построена отдельная модель бустинга.
-	\item Многослойный перцептрон имел размерность скрытых слоев --- 1024 и количество полносвязных слоев --- 4.
-	\item В рекуррентной модели DeepAR использовалась размерность скрытого состояния LSTM-слоя --- 128 и количество слоев LSTM --- 4.
-\end{itemize}
-
-Таким образом, разработанная нечеткая модель показала хорошее качество в задаче прогнозирования помесячных объемов транзакций со значением метрики $MAE = 0.112/0.147$ при прогнозировании на 1/3 месяца вперед, превзойдя на 12\%/5\% многослойный перцептрон. Достигнутое значение ошибки на порядок меньше математического ожидания по временному ряду для более чем половины клиентов из имеющейся выборки. Этого вполне достаточно для целей прогнозирования: дает возможность обнаружить кратное изменение месячных объемов транзакций или прекращение транзакционной активности.
