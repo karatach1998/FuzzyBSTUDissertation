@@ -20,12 +20,27 @@
 \input{Synopsis/synstyles}    % Стили для автореферата
 \input{Synopsis/userstyles}   % Стили для специфических пользовательских задач
 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
 %%% Библиография. Выбор движка для реализации %%%
 \ifnumequal{\value{bibliosel}}{0}{%
     \input{biblio/predefined} % Встроенная реализация с загрузкой файла через движок bibtex8
 }{
     \input{biblio/biblatex}   % Реализация пакетом biblatex через движок biber
 }
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\CapOp}{\cap}
+\DeclareMathOperator*{\Tone}{\mathrm{T}_1}
+\DeclareMathOperator*{\Ttwo}{\mathrm{T}_2}
+\DeclareMathOperator*{\Tthree}{\mathrm{T}_3}
+\DeclareMathOperator*{\Tfour}{\mathrm{T}_4}
+\DeclareMathOperator*{\Tnorm}{\mathrm{T}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\newcommand{\Exp}[1]{\E\left[ #1 \right]}
 
 % Вывести информацию о выбранных опциях в лог сборки
 \typeout{Selected options:}
