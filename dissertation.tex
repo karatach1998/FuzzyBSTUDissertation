@@ -41,6 +41,8 @@
 \DeclareMathOperator*{\Tthree}{\mathrm{T}_3}
 \DeclareMathOperator*{\Tfour}{\mathrm{T}_4}
 \DeclareMathOperator*{\Tnorm}{\mathrm{T}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\newcommand{\Exp}[1]{\E\left[ #1 \right]}
 
 %%% Библиография. Выбор движка для реализации %%%
 % Здесь только проверка установленного ключа. Сама настройка выбора движка
@@ -88,6 +90,9 @@
 }
 \usepackage{minted}
 \usemintedstyle{friendly}
+\usepackage{comment}
+
+\hypersetup{hidelinks}
 
 \begin{document}
 %%% Переопределение именований типовых разделов
@@ -115,8 +120,8 @@
 %\include{Dissertation/part2_example}           % Глава 2
 %\include{Dissertation/part3_example}           % Глава 3
 \include{Dissertation/conclusion}      % Заключение
-\include{Dissertation/acronyms}        % Список сокращений и условных обозначений
-\include{Dissertation/dictionary}      % Словарь терминов
+%\include{Dissertation/acronyms}        % Список сокращений и условных обозначений
+%\include{Dissertation/dictionary}      % Словарь терминов
 \include{Dissertation/references}      % Список литературы
 \include{Dissertation/lists}           % Списки таблиц и изображений (иллюстративный материал)
 
