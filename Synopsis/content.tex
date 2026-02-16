@@ -29,6 +29,7 @@
 \nocite{Sinuk2022}%
 \nocite{Karatach2022}%
 \nocite{Sinuk2023kii}%
+\nocite{Karatach2025itnop}%
 %
 %% authorother
 \nocite{bib1}%
@@ -39,28 +40,37 @@
 \nocite{Rospatent2}%
 
 \pdfbookmark{Общая характеристика работы}{characteristic}             % Закладка pdf
-\section*{Общая характеристика работы}
+%\section*{Общая характеристика работы}
 
-\newcommand{\actuality}{\pdfbookmark[1]{Актуальность}{actuality}\underline{\textbf{\actualityTXT}}}
-\newcommand{\progress}{\pdfbookmark[1]{Разработанность темы}{progress}\underline{\textbf{\progressTXT}}}
-\newcommand{\aim}{\pdfbookmark[1]{Цели}{aim}\underline{{\textbf\aimTXT}}}
-\newcommand{\tasks}{\pdfbookmark[1]{Задачи}{tasks}\underline{\textbf{\tasksTXT}}}
+\newcommand{\actuality}{\pdfbookmark[1]{Актуальность}{actuality}\textbf{\actualityTXT}}
+\newcommand{\progress}{\pdfbookmark[1]{Разработанность темы}{progress}\textbf{\progressTXT}}
+\newcommand{\aim}{\pdfbookmark[1]{Цели}{aim}\textbf\aimTXT}
+\newcommand{\tasks}{\pdfbookmark[1]{Задачи}{tasks}\textbf{\tasksTXT}}
 \newcommand{\aimtasks}{\pdfbookmark[1]{Цели и задачи}{aimtasks}\aimtasksTXT}
-\newcommand{\researchObject}{\pdfbookmark[1]{Объект исследования}{researchObject}\underline{\textbf{\researchObjectTXT}}}
-\newcommand{\researchSubject}{\pdfbookmark[1]{Предмет исследования}{researchSubject}\underline{\textbf{\researchSubjectTXT}}}
-\newcommand{\novelty}{\pdfbookmark[1]{Научной новизной}{novelty}\underline{\textbf{\noveltyTXT}}}
-\newcommand{\theoreticalValue}{\pdfbookmark[1]{Теоретическая значимость}{theoreticalValue}\underline{\textbf{\theoreticalValueTXT}}}
-\newcommand{\practicalValue}{\pdfbookmark[1]{Практическая значимость}{practicalValue}\underline{\textbf{\practicalValueTXT}}}
-\newcommand{\influence}{\pdfbookmark[1]{Практическая значимость}{influence}\underline{\textbf{\influenceTXT}}}
-\newcommand{\methods}{\pdfbookmark[1]{Методология и методы исследования}{methods}\underline{\textbf{\methodsTXT}}}
-\newcommand{\defpositions}{\pdfbookmark[1]{Положения, выносимые на защиту}{defpositions}\underline{\textbf{\defpositionsTXT}}}
-\newcommand{\specialityRelation}{\pdfbookmark[1]{Область исследования}{specialityRelation}\underline{\textbf{\specialityRelationTXT}}}
-\newcommand{\reliability}{\pdfbookmark[1]{Достоверность}{reliability}\underline{\textbf{\reliabilityTXT}}}
-\newcommand{\probation}{\pdfbookmark[1]{Апробация}{probation}\underline{\textbf{\probationTXT}}}
-\newcommand{\contribution}{\pdfbookmark[1]{Личный вклад автора.}{contribution}\underline{\textbf{\contributionTXT}}}
-\newcommand{\publications}{\pdfbookmark[1]{Публикации}{publications}\underline{\textbf{\publicationsTXT}}}
+\newcommand{\researchObject}{\pdfbookmark[1]{Объект исследования}{researchObject}\textbf{\researchObjectTXT}}
+\newcommand{\researchSubject}{\pdfbookmark[1]{Предмет исследования}{researchSubject}\textbf{\researchSubjectTXT}}
+\newcommand{\novelty}{\pdfbookmark[1]{Научной новизной}{novelty}\textbf{\noveltyTXT}}
+\newcommand{\theoreticalValue}{\pdfbookmark[1]{Теоретическая значимость}{theoreticalValue}\textbf{\theoreticalValueTXT}}
+\newcommand{\practicalValue}{\pdfbookmark[1]{Практическая значимость}{practicalValue}\textbf{\practicalValueTXT}}
+\newcommand{\influence}{\pdfbookmark[1]{Практическая значимость}{influence}\textbf{\influenceTXT}}
+\newcommand{\methods}{\pdfbookmark[1]{Методология и методы исследования}{methods}\textbf{\methodsTXT}}
+\newcommand{\defpositions}{\pdfbookmark[1]{Положения, выносимые на защиту}{defpositions}\textbf{\defpositionsTXT}}
+\newcommand{\specialityRelation}{\pdfbookmark[1]{Область исследования}{specialityRelation}\textbf{\specialityRelationTXT}}
+\newcommand{\reliability}{\pdfbookmark[1]{Достоверность}{reliability}\textbf{\reliabilityTXT}}
+\newcommand{\probation}{\pdfbookmark[1]{Апробация}{probation}\textbf{\probationTXT}}
+\newcommand{\contribution}{\pdfbookmark[1]{Личный вклад автора.}{contribution}\textbf{\contributionTXT}}
+\newcommand{\publications}{\pdfbookmark[1]{Публикации}{publications}\textbf{\publicationsTXT}}
 
 \input{common/characteristic} % Характеристика работы по структуре во введении и в автореферате не отличается (ГОСТ Р 7.0.11, пункты 5.3.1 и 9.2.1), потому её загружаем из одного и того же внешнего файла, предварительно задав форму выделения некоторым параметрам
+
+\textbf{Структура и объем и работы.} Диссертация состоит из~введения, 4 глав, заключения, списка литературы из 59 наименований и 4 приложения. Полный объём диссертации составляет 135 страниц, включая 41 рисунка и 1 таблицу.
+%% на случай ошибок оставляю исходный кусок на месте, закомментированным
+%Полный объём диссертации составляет  \ref*{TotPages}~страницу
+%с~\totalfigures{}~рисунками и~\totaltables{}~таблицами. Список литературы
+%содержит \total{citenum}~наименований.
+%
+
+%Работа была выполнена на кафедре программного обеспечения вычислительной техники и автоматизированных систем Белгородского государственного технологического университета имени В. Г. Шухова.
 
 %Диссертационная работа была выполнена при поддержке грантов \dots
 
@@ -70,7 +80,7 @@
 %литературы содержит \textbf{ХХX}~наименование.
 
 \pdfbookmark{Содержание работы}{description}                          % Закладка pdf
-\section*{Содержание работы}
+\section*{\centering{СОДЕРЖАНИЕ РАБОТЫ}}
 
 \textbf{Во введении} описана актуальность работы, сформулированы цель и задачи исследования, изложены основные результаты, их теоретическая и практическая значимость, приведена новизна исследования и защищаемые положения. 
 
@@ -85,7 +95,7 @@
 \begin{figure}[tbh!]
 	\centering
 	\includegraphics[width=\linewidth]{information-technology-diagram}
-	\caption{Схема системы управления на основе информационной технологии прогнозирования.}
+	\caption{Схема системы управления на основе информационной технологии прогнозирования}
 	\label{fig:information-technology-diagram}
 \end{figure}
 
@@ -181,7 +191,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 	\begin{minipage}[c]{0.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{ns-procedure}
-		\caption{Схема обобщенной процедуры адаптивной несинглтонной фаззификации временной последовательности.}
+		\caption{Схема обобщенной процедуры адаптивной несинглтонной фаззификации временной последовательности}
 		\label{fig:ns-procedure}
 	\end{minipage}
 	\hfill
@@ -190,7 +200,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 		%		\includegraphics[width=\textwidth]{ns-demo-low-noise}
 		%		\includegraphics[width=\textwidth]{ns-demo-large-noise}
 		\includegraphics[width=\textwidth]{ns-demo-low-and-high-noise}
-		\caption{Иллюстрация процедуры несинглтонной фаззификации временного ряда с низким (вверху) и высоким (внизу) уровнем шума.}
+		\caption{Иллюстрация процедуры несинглтонной фаззификации временного ряда с низким (вверху) и высоким (внизу) уровнем шума}
 		\label{fig:ns-demo-low-and-high-noise}
 	\end{minipage}
 \end{figure}
@@ -203,7 +213,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 %\begin{figure}[tbh!]
 %\centering
 %\includegraphics[width=\linewidth]{nfs-defuz-meom-with-defuz-demo}
-%\caption{Нейросетевая структура нечеткой модели с несинглтонной фаззификацией и дефаззификацией по среднему максимуму.}
+%\caption{Нейросетевая структура нечеткой модели с несинглтонной фаззификацией и дефаззификацией по среднему максимуму}
 %\label{fig:nfs-defuz-meom-with-defuz-demo}
 %\end{figure}
 
@@ -273,7 +283,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 \begin{figure}[thb]
 	\centering
 	\includegraphics[width=\linewidth]{nfs-ftv-and-defuz-meom-with-defuz-demo}
-	\caption{Схема нейро-нечеткой системы с вычислением НЗИ и дефаззификацией по среднему максимуму, а также пример работы процедуры дефаззификации.}
+	\caption{Схема нейро-нечеткой системы с вычислением НЗИ и дефаззификацией по среднему максимуму, а также пример работы процедуры дефаззификации}
 	\label{fig:nfs-ftv-and-defuz-meom-with-defuz-demo}
 \end{figure}
 
@@ -355,8 +365,8 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 
 Для нахождения свертки НЗИ по одному правилу можно составить алгоритм на основе формулы (\ref{eqn:ftv-compute-10}). Вычислительная сложность при параллельной реализации такого алгоритма составит $O\left(D_{ftv}^2 \cdot \log{n}\right)$. Значения $ftv_i[v_j]$ необходимо вычислить до запуска алгоритма свертки, что потребует сложности по памяти $O\left(D_{ftv}\cdot n\right)$.
 
-\begin{algorithm}
-	\begin{algorithmic}
+\begin{figure}
+	\begin{algorithmic}[1]
 		\Require $ftv_i,\ i=\overline{1,n}$ --- это $\tau_{A_{ki}|A'_i}$ дискретизированная в точках $v_j$
 		\State $max\_ftv[i] = 0;$
 		\For{$v_j = 1\dots0$}
@@ -374,12 +384,12 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
 	\end{algorithmic}
 	\caption{Алгоритм свертки НЗИ при $T_1=min$}
 	\label{alg:ftv-reduction}
-\end{algorithm}
+\end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{ftvs-reduction-example-gradient}
-	\caption{Пример работы параллельного алгоритма свертки НЗИ при расчетной сетке состоящей из 5 точек.}
+	\caption{Пример работы параллельного алгоритма свертки НЗИ при расчетной сетке состоящей из 5 точек}
 	\label{fig:ftvs-reduction-example}
 \end{figure}
 
@@ -413,9 +423,7 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
  
 Подбор параметров для фиксированного количества правил и заданной метрики осуществлялся с использованием адаптированного алгоритма оптимизации метод роя частиц (Particle Swarm Optimization, PSO), который приведен в алгоритме \ref{alg:pso}.
  
- \begin{algorithm}[p]
- 	\caption{Particle Swarm Optimization (PSO) для подбора параметров ф. п. в правилах на основе эталонных данных}
- 	\label{alg:pso}
+ \begin{figure}
  	\begin{algorithmic}[1]
  		\Require
  		\Statex $S$ --- количество частиц
@@ -452,7 +460,9 @@ B'_k = \mathbf{A'} \circ (\mathbf{A_k} \to B_k),
  		
  		\State \textbf{Возврат} $\theta^g$ \Comment{Найденный глобальный оптимум}
  	\end{algorithmic}
- \end{algorithm}
+ 	\caption{Particle Swarm Optimization (PSO) для подбора параметров ф. п. в правилах на основе эталонных данных}
+ 	\label{alg:pso}
+ \end{figure}
 
 Минимально необходимый объем данных в наборе для обучения обычно оценивается формулой:
 \[
@@ -494,14 +504,14 @@ C \times N \times n \times <\textit{количество параметров ф
 	\begin{minipage}[c]{0.35\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{meom-use-case}
-		\caption{Иллюстрация возникновения <<плато>> при дефаззификации свертки правил $\mu_{B'}(y)$ (закрашенная область).}
+		\caption{Иллюстрация возникновения <<плато>> при дефаззификации свертки правил $\mu_{B'}(y)$ (закрашенная область)}
 		\label{fig:meom-use-case}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[c]{0.6\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{defuz-meom-pos-hue}
-		\caption{Реализация алгоритма дефаззификации на основе PSO для усреднения по точкам роя, попадающих в плато максимумов.}
+		\caption{Реализация алгоритма дефаззификации на основе PSO для усреднения по точкам роя, попадающих в плато максимумов}
 		\label{fig:defuz-meom-pos-hue}
 	\end{minipage}
 \end{figure}
@@ -523,7 +533,7 @@ C \times N \times n \times <\textit{количество параметров ф
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{application-schema-diagram}
-	\caption{Схема использования библиотеки для нечеткого моделирования и прогнозирования временных рядов.}
+	\caption{Схема использования библиотеки для нечеткого моделирования и прогнозирования временных рядов}
 	\label{fig:application-schema-diagram}
 \end{figure}
 
@@ -564,14 +574,14 @@ C \times N \times n \times <\textit{количество параметров ф
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.3]{mackey-glass-ewma-example}
-	\caption{График сгенерированной последовательности Mackey-Glass $x(t), t\in[0;999]$, график разностей соседних точек $d_t$ последовательности $x(t)$, график $\hat{d}_t$ с наложением экспоненциально взвешенного сглаживания на последовательность разностей и график экспоненциально взвешенного скользящего среднеквадратичного отклонения разностей $\hat{\sigma}_t$. На вложенном изображении участка $t\in[650,750]$ яркостью красного цвета показано значения весового коэффициента $\alpha (1-\alpha)^{t-p}, p=\overline{1,t_0}$ при $\alpha = 0.2$.}
+	\caption{График сгенерированной последовательности Mackey-Glass $x(t), t\in[0;999]$, график разностей соседних точек $d_t$ последовательности $x(t)$, график $\hat{d}_t$ с наложением экспоненциально взвешенного сглаживания на последовательность разностей и график экспоненциально взвешенного скользящего среднеквадратичного отклонения разностей $\hat{\sigma}_t$. На вложенном изображении участка $t\in[650,750]$ яркостью красного цвета показано значения весового коэффициента $\alpha (1-\alpha)^{t-p}, p=\overline{1,t_0}$ при $\alpha = 0.2$}
 	\label{fig:mackey-glass-ewma-example}
 \end{figure}
 
 \begin{figure}[tbh]
 	\centering
 	\includegraphics[scale=0.7]{mackey-glass-inference-duration}
-	\caption{График длительности выполнения параллельной реализации нечеткого вывода для обучающего и тестового набора данных при количестве правил $N=30$.}
+	\caption{График длительности выполнения параллельной реализации нечеткого вывода для обучающего и тестового набора данных при количестве правил $N=30$}
 	\label{fig:mackey-glass-inference-duration}
 \end{figure}
 
@@ -587,7 +597,7 @@ sMAPE = \frac{100\%}{n} \sum_{t=1}^n
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.7]{mackey-glass-inference-smape}
-	\caption{График значений метрики sMAPE на обучающем и тестовом наборах данных при различных размерах окна запаздывания, количестве правил --- 30.}
+	\caption{График значений метрики sMAPE на обучающем и тестовом наборах данных при различных размерах окна запаздывания, количестве правил --- 30}
 	\label{fig:mackey-glass-inference-smape}
 \end{figure}
 
@@ -604,7 +614,7 @@ sMAPE = \frac{100\%}{n} \sum_{t=1}^n
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.65\linewidth]{acquiring-system-flowchart}
-	\caption{Схема использования прогнозов объема транзакций по безналичным платежам в банковской системе.}
+	\caption{Схема использования прогнозов объема транзакций по безналичным платежам в банковской системе}
 	\label{fig:acquiring-system-flowchart}
 \end{figure}
 Второй эксперимент посвящен применению разработанного метода для прогнозирования помесячного объема транзакций безналичных платежей корпоративных клиентов банка. Результаты прогнозирования интегрируются в прогнозы других моделей и используются в системе управления выдачей кредитов юридическим лицам. Транзакционная активность юридических лиц является уникальным процессом из-за нишевой бизнес-модели и уникальных экономических условий. Источником неопределенности в этом наборе данных является стохастический характер динамики временной последовательности, из-за чего каждый временной ряд является нестационарным. Поэтому в данном эксперименте также использовалась процедура адаптивной несинглтонной фаззификации. В качестве метрики выбрана RMAE (relative MAE) --- отношение средней абсолютной ошибки к математическому ожиданию средних по временным рядам клиентов:
@@ -617,7 +627,7 @@ RMAE = \frac{MAE}{\mathbb{E}[\mathbb{E}[s_t]]}.
 \begin{table}[t]
 	\centering
 	\begin{threeparttable}% выравнивание подписи по границам таблицы
-		\caption{Значения метрики MAE относительно $\mathbb{E}[\mathbb{E}[s_t]]$ для разработанной нечеткой и альтернативных моделей.}%
+		\caption{Значения метрики MAE относительно $\mathbb{E}[\mathbb{E}[s_t]]$ для разработанной нечеткой и альтернативных моделей}%
 		\label{tab:acquiring-metric-comparison}%
 		\begin{tabular}{| c | c | c |}
 			\toprule
@@ -655,7 +665,7 @@ RMAE = \frac{MAE}{\mathbb{E}[\mathbb{E}[s_t]]}.
 В \textbf{заключении} сделаны выводы о полученных в процессе работы результатах.
 
 \pdfbookmark{Основные результаты и выводы}{conclusion}                                  % Закладка pdf
-\section*{Основные результаты и выводы}
+\section*{\centering{ОСНОВНЫЕ РЕЗУЛЬТАТЫ И ВЫВОДЫ}}
 \input{common/concl}
 
 \pdfbookmark{Литература}{bibliography}                                % Закладка pdf

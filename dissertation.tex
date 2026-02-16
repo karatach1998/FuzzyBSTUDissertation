@@ -57,6 +57,7 @@
 \typeout{Selected options:}
 \typeout{Draft mode: \arabic{draft}}
 \typeout{Font: \arabic{fontfamily}}
+\typeout{Font: \fontname\font}
 \typeout{AltFont: \arabic{usealtfont}}
 \typeout{Bibliography backend: \arabic{bibliosel}}
 \typeout{Precompile images: \arabic{imgprecompile}}
@@ -82,15 +83,36 @@
     basicstyle=\ttfamily\small, % Set a monospaced, slightly larger font
     frame=single,              % Add a frame around the code
     numbers=left,              % Line numbers on the left
-    keywordstyle=\color{blue}\bfseries, % Highlight keywords in blue boldface
+    keywordstyle=\color{black}\bfseries, % Highlight keywords in blue boldface
     numberstyle=\tiny,         % Line number style
     breaklines=true,           % Automatic line breaking
     captionpos=b,              % Caption position at the bottom
     language=C++               % Default language for listings
 }
 \usepackage{minted}
-\usemintedstyle{friendly}
+\usemintedstyle{algol_nu}
 \usepackage{comment}
+
+\usepackage{xpatch}
+\makeatletter
+\xpatchcmd{\l@chapapp}{\advance\memRTLleftskip\@tempdima}%
+{}%                       replace with nothing
+{\typeout{patched ok}}%   went ok
+{\typeout{patch failed}}% went bad
+\xpatchcmd{\l@section}{\advance\memRTLleftskip\@tempdima}%
+{}%                       replace with nothing
+{\typeout{patched ok}}%   went ok
+{\typeout{patch failed}}% went bad
+\xpatchcmd{\l@subsection}{\advance\memRTLleftskip\@tempdima}%
+{}%                       replace with nothing
+{\typeout{patched ok}}%   went ok
+{\typeout{patch failed}}% went bad
+
+%\renewcommand{\cftsectionfont}{\raggedright}
+\makeatother
+
+
+
 
 \hypersetup{hidelinks}
 
@@ -123,7 +145,7 @@
 %\include{Dissertation/acronyms}        % Список сокращений и условных обозначений
 %\include{Dissertation/dictionary}      % Словарь терминов
 \include{Dissertation/references}      % Список литературы
-\include{Dissertation/lists}           % Списки таблиц и изображений (иллюстративный материал)
+%\include{Dissertation/lists}           % Списки таблиц и изображений (иллюстративный материал)
 
 \setcounter{totalchapter}{\value{chapter}} % Подсчёт количества глав
 
@@ -131,8 +153,23 @@
 \appendix
 % Оформление заголовков приложений ближе к ГОСТ:
 \setlength{\midchapskip}{20pt}
-\renewcommand*{\afterchapternum}{\par\nobreak\vskip \midchapskip}
+% Поставить точку после номера приложения и сохранить вертикальный отступ
+\renewcommand*{\afterchapternum}{.\space\par\nobreak\vskip \midchapskip}
 \renewcommand\thechapter{\Asbuk{chapter}} % Чтобы приложения русскими буквами нумеровались
+
+% Печатать слово "Приложение" перед буквой в заголовке и использовать ту же
+% конфигурацию шрифта/выравнивания, что и для обычных глав.
+%\renewcommand*{\printchaptername}{\appendixname\space} % (на всякий случай)
+%\renewcommand*{\printchapternum}{\thechapter}          % (на всякий случай)
+% \renewcommand*{\printchaptertitle}[1]{%
+%   \hdngaligni\hdngalign
+%   \chaptitlefont
+%   \ifthischapternumbered
+%     \MakeUppercase{\appendixname\space\thechapter.\space#1}%
+%   \else
+%     \MakeUppercase{#1}%
+%   \fi
+% }
 
 \include{Dissertation/appendix}        % Приложения
 
