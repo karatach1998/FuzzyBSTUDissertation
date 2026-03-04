@@ -5,7 +5,8 @@
                                 % \DeclareRobustCommand protects \fixme
                                 % from expanding inside \MakeUppercase
 \AtBeginDocument{%
-    \setlength{\parindent}{2.5em}                   % Абзацный отступ. Должен быть одинаковым по всему тексту и равен пяти знакам (ГОСТ Р 7.0.11-2011, 5.3.7).
+    \setlength{\parindent}{1.25cm}                   % Абзацный отступ. Должен быть одинаковым по всему тексту и равен пяти знакам (ГОСТ Р 7.0.11-2011, 5.3.7).
+    \setlength{\parskip}{0pt}
 }
 
 %%% Таблицы %%%
@@ -42,10 +43,10 @@
 \DeclareCaptionSubType{figure}
 \renewcommand\thesubfigure{\asbuk{subfigure}} % нумерация подрисунков
 \ifsynopsis
-\DeclareCaptionFont{norm}{\fontsize{10pt}{11pt}\selectfont}
+\DeclareCaptionFont{norm}{\fontsize{14pt}{14pt}\selectfont}
 \newcommand{\subfigureskip}{2.pt}
 \else
-\DeclareCaptionFont{norm}{\fontsize{14pt}{16pt}\selectfont}
+\DeclareCaptionFont{norm}{\fontsize{14pt}{14pt}\selectfont}
 \newcommand{\subfigureskip}{0.pt}
 \fi
 
@@ -193,7 +194,13 @@
 \renewcommand{\labelenumiii}{\theenumiii)} %третий уровень нумерации
 
 \setlist{nosep,%                                    % Единый стиль для всех списков (пакет enumitem), без дополнительных интервалов.
-    labelindent=\parindent,leftmargin=*%            % Каждый пункт, подпункт и перечисление записывают с абзацного отступа (ГОСТ 2.105-95, 4.1.8)
+    labelindent=\parindent,%                        % Отступ метки = абзацный отступ
+    leftmargin=*,%                         % Левая граница текста пункта равна абзацному отступу
+    % labelwidth=3\parindent,%                                 % Нулевая ширина метки — чтобы не создавать висящий отступ
+    % labelsep=\parindent,%                                 % Расстояние между меткой и текстом
+    itemindent=1em+\parindent,%                                 % Отступ первой строки пункта
+    listparindent=\parindent,%                               % Отступ абзаца внутри пункта = 0 (нет смещения для не первой строки)
+    align=parleft%                                   % Выравнивание по левому краю
 }
 
 %%% Правильная нумерация приложений, рисунков и формул %%%

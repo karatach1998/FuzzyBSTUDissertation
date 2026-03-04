@@ -3,7 +3,7 @@
 
 % Откомментируйте, чтобы отключить генерацию закладок в pdf
 % \PassOptionsToPackage{bookmarks=false}{hyperref}
-\documentclass[a5paper,10pt,twoside,openany,article]{memoir} %,draft
+\documentclass[a4paper,14pt,twoside,openany,article]{memoir} %,draft
 
 \input{common/setup}          % общие настройки шаблона
 \input{common/packages}       % Пакеты общие для диссертации и автореферата
@@ -24,6 +24,7 @@
 \usepackage{soul}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage[none]{hyphenat}
 
 %%% Библиография. Выбор движка для реализации %%%
 \ifnumequal{\value{bibliosel}}{0}{%

@@ -1,18 +1,23 @@
 %%% Переопределение именований, если иначе не сработает %%%
-%\gappto\captionsrussian{
+\gappto\captionsrussian{
 %    \renewcommand{\chaptername}{Глава}
-%    \renewcommand{\appendixname}{Приложение} % (ГОСТ Р 7.0.11-2011, 5.7)
-%}
+   \renewcommand{\appendixname}{Приложение} % (ГОСТ Р 7.0.11-2011, 5.7)
+}
 
 %%% Изображения %%%
 \graphicspath{{images/}{Dissertation/images/}}         % Пути к изображениям
+
+% Use \MakeTextUppercase (preserves hyphenation) instead of \MakeUppercase
+% which disables hyphenation and can break justification in the ToC.
+\RequirePackage{textcase}
 
 %%% Интервалы %%%
 %% По ГОСТ Р 7.0.11-2011, пункту 5.3.6 требуется полуторный интервал
 %% Реализация средствами класса (на основе setspace) ближе к типографской классике.
 %% И правит сразу и в таблицах (если со звёздочкой)
-%\DoubleSpacing*     % Двойной интервал
+% \DoubleSpacing*     % Двойной интервал
 \OnehalfSpacing*    % Полуторный интервал
+% \SingleSpacing*     % Одиночный интервал
 %\setSpacing{1.42}   % Полуторный интервал, подобный Ворду (возможно, стоит включать вместе с предыдущей строкой)
 
 %%% Макет страницы %%%
@@ -30,11 +35,15 @@
 \hfuzz 0.3pt
 \vfuzz \hfuzz
 %\raggedbottom
-%\sloppy                 % Избавляемся от переполнений
+\sloppy                 % Избавляемся от переполнений
+% Отключение переносов по всему документу
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 \clubpenalty=10000      % Запрещаем разрыв страницы после первой строки абзаца
 \widowpenalty=10000     % Запрещаем разрыв страницы после последней строки абзаца
 \brokenpenalty=4991     % Ограничение на разрыв страницы, если строка заканчивается переносом
 
+\renewcommand{\theintvl}{1.25} % Интервал между заголовками и текстом в единицах размера шрифта (ГОСТ Р 7.0.11-2011, 5.3.5)
 %%% Блок управления параметрами для выравнивания заголовков в тексте %%%
 \setlength{\parindent}{1.25em}
 \newlength{\otstuplen}
@@ -48,24 +57,31 @@
     \newcommand{\hdngaligni}{\hspace{\otstuplen}}      % по левому краю
 } % В обоих случаях вроде бы без переноса, как и надо (ГОСТ Р 7.0.11-2011, 5.3.5)
 
+\setlength{\cftchapterindent}{0pt}
 %%% Оглавление %%%
+\setpnumwidth{1.0em}
+\renewcommand{\cftdotsep}{0.5}
 \renewcommand{\cftchapterdotsep}{\cftdotsep}                % отбивка точками до номера страницы начала главы/раздела
 
 %% Переносить слова в заголовке не допускается (ГОСТ Р 7.0.11-2011, 5.3.5). Заголовки в оглавлении должны точно повторять заголовки в тексте (ГОСТ Р 7.0.11-2011, 5.2.3). Прямого указания на запрет переносов в оглавлении нет, но по той же логике невнесения искажений в смысл, лучше в оглавлении не переносить:
-\setrmarg{2.55em}                             %To have the (sectional) titles in the ToC, etc., typeset ragged right with no hyphenation
+% By default the template used a right-margin for ToC titles which forces
+% ragged-right typesetting (no hyphenation). For pdflatex we prefer full
+% justification in the ToC so hyphenation can work — set the right margin to 0.
+\setrmarg{0pt}
 \renewcommand{\cftchapterpagefont}{\normalfont}        % нежирные номера страниц у глав в оглавлении
 \renewcommand{\cftchapterleader}{\cftdotfill{\cftchapterdotsep}}% нежирные точки до номеров страниц у глав в оглавлении
 % Сделать названия глав в оглавлении небold и в верхнем регистре
-\renewcommand{\cftchapterfont}{\raggedright\normalfont\MakeUppercase} % нежирные названия глав в оглавлении
+\renewcommand{\cftchapterfont}{\normalfont\MakeTextUppercase} % нежирные названия глав в оглавлении
+
 
 \ifnumgreater{\value{headingdelim}}{0}{%
     \renewcommand\cftchapteraftersnum{.\space}       % добавляет точку с пробелом после номера раздела в оглавлении
 }{}
 
 % Всегда ставим точку после номера для секций (в тексте и в оглавлении)
-\renewcommand\cftsectionaftersnum{.\space}       % добавляет точку с пробелом после номера подраздела в оглавлении
-\renewcommand\cftsubsectionaftersnum{.\space}    % добавляет точку с пробелом после номера подподраздела в оглавлении
-\renewcommand\cftsubsubsectionaftersnum{.\space} % добавляет точку с пробелом после номера подподподраздела в оглавлении
+% \renewcommand\cftsectionaftersnum{.\space}       % добавляет точку с пробелом после номера подраздела в оглавлении
+% \renewcommand\cftsubsectionaftersnum{.\space}    % добавляет точку с пробелом после номера подподраздела в оглавлении
+% \renewcommand\cftsubsubsectionaftersnum{.\space} % добавляет точку с пробелом после номера подподподраздела в оглавлении
 
 % В текстовых заголовках: всегда ставим точку и пробел после номера
 \AfterEndPreamble{%
@@ -101,7 +117,7 @@
 %%% Оформление заголовков глав, разделов, подразделов %%%
 %% Работа должна быть выполнена ... размером шрифта 12-14 пунктов (ГОСТ Р 7.0.11-2011, 5.3.8). То есть не должно быть надписей шрифтом более 14. Так и поставим.
 %% Эти установки будут давать одинаковый результат независимо от выбора базовым шрифтом 12 пт или 14 пт
-\newcommand{\basegostsectionfont}{\fontsize{14pt}{16pt}\selectfont\bfseries}
+\newcommand{\basegostsectionfont}{\fontsize{14pt}{14pt}\selectfont\bfseries}
 
 
 \makeatletter
@@ -114,6 +130,7 @@
     \renewcommand*{\chapnumfont}{\basegostsectionfont}
     \renewcommand*{\chaptitlefont}{\basegostsectionfont}
     \renewcommand*{\chapterheadstart}{}
+    % \renewcommand*{\afterchapternum}{.\space}   % добавляет точку с пробелом после номера раздела
     % \ifnumgreater{\value{headingdelim}}{0}{%
     %     \renewcommand*{\afterchapternum}{.\space}   % добавляет точку с пробелом после номера раздела
     % }{%
@@ -130,9 +147,9 @@
         \hdngaligni\hdngalign
         \chaptitlefont
         \ifthischapternumbered
-            \MakeUppercase{\@chapapp\space\thechapter.\space##1}%
+            \MakeTextUppercase{\@chapapp\space\thechapter.\space##1}%
         \else
-            \MakeUppercase{##1}%
+            \MakeTextUppercase{##1}%
         \fi
     }%
 }
@@ -214,11 +231,6 @@
     \regtotcounter{TotPages}               % Если иным способом поставить в преамбуле то ошибка в числе страниц
     \newtotcounter{totalappendix}
     \newtotcounter{totalchapter}
-}
-
-%%% Установить одинаковый отступ для section и более глубоких уровней в оглавлении.
-%%% Отступ выбран 2.55em (как в \setrmarg), резерв для номера — 3em.
-\AfterEndPreamble{%
 
     % Применять запрет переносов только при печати оглавления:
     % Оборачиваем оригинальную \tableofcontents в локальную группу с высокими штрафами
@@ -233,7 +245,8 @@
     %         % \let\addcontentsline\@gobblethree
             \exhyphenpenalty=10000\relax
             % зафиксировать межстрочный интервал и убрать лишние вертикальные отступы внутри оглавления
-            \OnehalfSpacing*
+            \SingleSpacing*
+            \justifying
             \origtableofcontents
         % \endgroup
         % \endgroup
@@ -242,7 +255,7 @@
 
     % Установить одинаковый левый отступ для section и более глубоких уровней в оглавлении.
     % Значение 2.55em совпадает с \setrmarg{1.55em} выбором отступа выше.
-    \cftsetindents{section}{1.5em}{1.85em}
-    \cftsetindents{subsection}{1.5em}{2.65em}
-    \cftsetindents{subsubsection}{1.5em}{2.55em}
+    \cftsetindents{section}{0.0em}{1.85em}
+    \cftsetindents{subsection}{0.0em}{2.65em}
+    \cftsetindents{subsubsection}{0.0em}{2.55em}
 }

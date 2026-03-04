@@ -1,4 +1,24 @@
-\chapter{Текст программного кода Python-модуля нечеткого вывода с использованием технологии CUDA}\label{app:A}
+\chapter*{Приложения}
+\addcontentsline{toc}{chapter}{Приложения}
+
+\addtocontents{toc}{\protect\renewcommand{\protect\cftsectionpresnum}{\appendixname\space}}
+\addtocontents{toc}{\protect\settowidth{\protect\cftsectionnumwidth}{\cftsectionpresnum\thesection\cftsectionaftersnum}}
+\addtocontents{toc}{\protect\cftsetindents{section}{0.0em}{3.5cm}}
+
+\titleformat{\section}[display]
+{\normalfont\filcenter\bfseries}
+{\appendixname\space\thesection}
+{1ex minus .1ex}
+{\filcenter\textnormal{{(справочное)}}\\\vspace{3ex}}
+
+% Нумеровать приложения как \section с буквенными обозначениями
+% и префиксом "Приложение A. " перед названием.
+\renewcommand{\thesection}{\Asbuk{section}}
+\setsecnumformat{\appendixname\space\csname the#1\endcsname.\space}
+%\setcounter{section}{0}
+
+
+\section{Текст программного кода Python-модуля нечеткого вывода с использованием технологии CUDA}\label{app:A}
 
 
 %Для крупных листингов есть два способа. Первый красивый, но в нём могут быть
@@ -1052,16 +1072,16 @@ void fuzzy_predict_impl(
 	\end{minted}
 \endgroup
 
-
-\chapter{Свидетельства о государственной\linebreak регистрации программ для ЭВМ}\label{app:B}
+\newpage
+\section{Свидетельства о государственной\linebreak регистрации программ для ЭВМ}\label{app:B}
 
 \includegraphics[width=0.8\textwidth, page=1]{images/RosPatent1.pdf}
 
 \includegraphics[width=0.8\textwidth, page=1]{images/RosPatent2.pdf}
 
-\chapter{Справка о практическом применении результатов диссертационной работы в организации}\label{app:C}
+\section{Справка о практическом применении результатов диссертационной работы в организации}\label{app:C}
 \includegraphics[width=0.80\textwidth, page=1]{images/act-practical.pdf}
 
-\chapter{Акт о внедрении результатов\linebreak диссертационной работы в учебный процесс}\label{app:D}
+\section{Акт о внедрении результатов\linebreak диссертационной работы в учебный процесс}\label{app:D}
 \includegraphics[width=0.86\textwidth, page=1]{images/act-education.pdf}
 %\includepdf[pages=-]{images/act-practical.pdf}

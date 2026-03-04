@@ -93,6 +93,8 @@
 \usemintedstyle{algol_nu}
 \usepackage{comment}
 
+\usepackage{titlesec}
+
 \usepackage{xpatch}
 \makeatletter
 \xpatchcmd{\l@chapapp}{\advance\memRTLleftskip\@tempdima}%
@@ -154,14 +156,14 @@
 % Оформление заголовков приложений ближе к ГОСТ:
 \setlength{\midchapskip}{20pt}
 % Поставить точку после номера приложения и сохранить вертикальный отступ
-\renewcommand*{\afterchapternum}{.\space\par\nobreak\vskip \midchapskip}
-\renewcommand\thechapter{\Asbuk{chapter}} % Чтобы приложения русскими буквами нумеровались
+%\renewcommand*{\afterchapternum}{.\space\par\nobreak\vskip \midchapskip}
+%\renewcommand\thechapter{\Asbuk{chapter}} % Чтобы приложения русскими буквами нумеровались
 
 % Печатать слово "Приложение" перед буквой в заголовке и использовать ту же
 % конфигурацию шрифта/выравнивания, что и для обычных глав.
 %\renewcommand*{\printchaptername}{\appendixname\space} % (на всякий случай)
 %\renewcommand*{\printchapternum}{\thechapter}          % (на всякий случай)
-% \renewcommand*{\printchaptertitle}[1]{%
+%\renewcommand*{\printchaptertitle}[1]{%
 %   \hdngaligni\hdngalign
 %   \chaptitlefont
 %   \ifthischapternumbered
