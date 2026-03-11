@@ -2,14 +2,15 @@
 \addcontentsline{toc}{chapter}{Приложения}
 
 \addtocontents{toc}{\protect\renewcommand{\protect\cftsectionpresnum}{\appendixname\space}}
+\addtocontents{toc}{\protect\renewcommand{\protect\cftsectionaftersnum}{\space(справочное)\space}}
 \addtocontents{toc}{\protect\settowidth{\protect\cftsectionnumwidth}{\cftsectionpresnum\thesection\cftsectionaftersnum}}
-\addtocontents{toc}{\protect\cftsetindents{section}{0.0em}{3.5cm}}
+\addtocontents{toc}{\protect\cftsetindents{section}{0.0em}{6.3cm}}
 
 \titleformat{\section}[display]
 {\normalfont\filcenter\bfseries}
 {\appendixname\space\thesection}
 {1ex minus .1ex}
-{\filcenter\textnormal{{(справочное)}}\\\vspace{3ex}}
+{\filcenter\textnormal{\textbf{(справочное)}}\\\vspace{3ex}}
 
 % Нумеровать приложения как \section с буквенными обозначениями
 % и префиксом "Приложение A. " перед названием.
@@ -32,10 +33,10 @@
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
 \begin{ListingEnv}
-	\caption{Модуль-обертка на языке Cython}
+	% \caption{Модуль-обертка на языке Cython}
 	\label{lst:cython}
 \end{ListingEnv}
-\begin{minted}[fontsize=\footnotesize,tabsize=2,breaklines]{cython}
+\begin{minted}[fontsize=\footnotesize,tabsize=2,breaklines,breaksymbolleft=\tiny\space]{cython}
 cdef extern from "tsfuzzy.hpp":
     cdef enum class ImplType:
         LUKASIEWICZ,
@@ -172,11 +173,11 @@ cdef class TsFuzzy:
         return centers, deviations
 \end{minted}
 \endgroup
-Листинг реализации нечеткого вывода на языке CUDA C++ с использованием библиотек Kokkos и ArborX \cref{lst:hwplain}.
+% Листинг реализации нечеткого вывода на языке CUDA C++ с использованием библиотек Kokkos и ArborX \cref{lst:hwplain}.
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
 \begin{ListingEnv}
-\caption{Реализация нечеткого вывода на языке CUDA C++ с использованием библиотек Kokkos и ArborX}
+% \caption{Реализация нечеткого вывода на языке CUDA C++ с использованием библиотек Kokkos и ArborX}
 \label{lst:cuda}
 \end{ListingEnv}
 \begin{minted}[fontsize=\footnotesize,tabsize=2,breaklines]{cuda}
@@ -1073,15 +1074,40 @@ void fuzzy_predict_impl(
 \endgroup
 
 \newpage
-\section{Свидетельства о государственной\linebreak регистрации программ для ЭВМ}\label{app:B}
+\section{Свидетельства о государственной регистрации программ для ЭВМ}\label{app:B}
+\counterwithin{figure}{section}
 
-\includegraphics[width=0.8\textwidth, page=1]{images/RosPatent1.pdf}
+\FloatBarrier
 
-\includegraphics[width=0.8\textwidth, page=1]{images/RosPatent2.pdf}
+\setcounter{figure}{0} % Reset figure counter to 0 so next figure is numbered 1
 
-\section{Справка о практическом применении результатов диссертационной работы в организации}\label{app:C}
-\includegraphics[width=0.80\textwidth, page=1]{images/act-practical.pdf}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth, page=1]{images/RosPatent1.pdf}
+\caption{Свидетельство о государственной регистрации программы для ЭВМ №~2025663372}
+\end{figure}
 
-\section{Акт о внедрении результатов\linebreak диссертационной работы в учебный процесс}\label{app:D}
-\includegraphics[width=0.86\textwidth, page=1]{images/act-education.pdf}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth, page=1]{images/RosPatent2.pdf}
+\caption{Свидетельство о государственной регистрации программы для ЭВМ №~2025663464}
+\end{figure}
+
+\newpage
+\section{Акты внедрения результатов диссертации}\label{app:C}
+\counterwithin{figure}{section}
+
+\FloatBarrier
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth, page=1]{images/act-practical.pdf}
+\caption{Справка о практическом применении результатов диссертационной работы в организации}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth, page=1]{images/act-education.pdf}
+\caption{Акт о внедрении результатов\linebreak диссертационной работы в учебный процесс}
+\end{figure}
 %\includepdf[pages=-]{images/act-practical.pdf}

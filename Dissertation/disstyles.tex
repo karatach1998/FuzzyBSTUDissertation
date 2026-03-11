@@ -18,6 +18,14 @@
 % \DoubleSpacing*     % Двойной интервал
 \OnehalfSpacing*    % Полуторный интервал
 % \SingleSpacing*     % Одиночный интервал
+% Отделять формулы от текста сверху и снизу одним строковым интервалом
+% (устанавливаем величины вокруг display-math в начале документа)
+\AtBeginDocument{%
+    \setlength{\abovedisplayskip}{\baselineskip}%
+    \setlength{\belowdisplayskip}{\baselineskip}%
+    \setlength{\abovedisplayshortskip}{\baselineskip}%
+    \setlength{\belowdisplayshortskip}{\baselineskip}%
+}
 %\setSpacing{1.42}   % Полуторный интервал, подобный Ворду (возможно, стоит включать вместе с предыдущей строкой)
 
 %%% Макет страницы %%%
@@ -43,7 +51,7 @@
 \widowpenalty=10000     % Запрещаем разрыв страницы после последней строки абзаца
 \brokenpenalty=4991     % Ограничение на разрыв страницы, если строка заканчивается переносом
 
-\renewcommand{\theintvl}{1.25} % Интервал между заголовками и текстом в единицах размера шрифта (ГОСТ Р 7.0.11-2011, 5.3.5)
+\renewcommand{\theintvl}{2} % Интервал между заголовками и текстом в единицах размера шрифта (ГОСТ Р 7.0.11-2011, 5.3.5)
 %%% Блок управления параметрами для выравнивания заголовков в тексте %%%
 \setlength{\parindent}{1.25em}
 \newlength{\otstuplen}
@@ -59,8 +67,8 @@
 
 \setlength{\cftchapterindent}{0pt}
 %%% Оглавление %%%
-\setpnumwidth{1.0em}
-\renewcommand{\cftdotsep}{0.5}
+\setpnumwidth{1.6em}
+\renewcommand{\cftdotsep}{0.1}
 \renewcommand{\cftchapterdotsep}{\cftdotsep}                % отбивка точками до номера страницы начала главы/раздела
 
 %% Переносить слова в заголовке не допускается (ГОСТ Р 7.0.11-2011, 5.3.5). Заголовки в оглавлении должны точно повторять заголовки в тексте (ГОСТ Р 7.0.11-2011, 5.2.3). Прямого указания на запрет переносов в оглавлении нет, но по той же логике невнесения искажений в смысл, лучше в оглавлении не переносить:
@@ -75,7 +83,7 @@
 
 
 \ifnumgreater{\value{headingdelim}}{0}{%
-    \renewcommand\cftchapteraftersnum{.\space}       % добавляет точку с пробелом после номера раздела в оглавлении
+    % \renewcommand\cftchapteraftersnum{.\space}       % добавляет точку с пробелом после номера раздела в оглавлении
 }{}
 
 % Всегда ставим точку после номера для секций (в тексте и в оглавлении)
@@ -85,10 +93,10 @@
 
 % В текстовых заголовках: всегда ставим точку и пробел после номера
 \AfterEndPreamble{%
-    \setsecnumformat{\csname the#1\endcsname.\space}%
+    \setsecnumformat{\csname the#1\endcsname\space}%
 }
 
-\renewcommand*{\cftappendixname}{\appendixname\space} % Слово Приложение в оглавлении
+% \renewcommand*{\cftappendixname}{\appendixname\space} % Слово Приложение в оглавлении
 
 %%% Колонтитулы %%%
 % Порядковый номер страницы печатают на середине верхнего поля страницы (ГОСТ Р 7.0.11-2011, 5.3.8)
@@ -97,6 +105,10 @@
 \makeevenfoot{plain}{}{}{}
 \makeoddfoot{plain}{}{}{}
 \pagestyle{plain}
+
+% Один интервал сверху и снизу от рисунков и таблиц (ГОСТ) %%%
+% \setlength{\intextsep}{\baselineskip}      % над и под float'ами в середине страницы
+% \setlength{\textfloatsep}{\baselineskip}   % между текстом и float'ом вверху/внизу страницы
 
 %%% добавить Стр. над номерами страниц в оглавлении
 %%% http://tex.stackexchange.com/a/306950
@@ -147,7 +159,7 @@
         \hdngaligni\hdngalign
         \chaptitlefont
         \ifthischapternumbered
-            \MakeTextUppercase{\@chapapp\space\thechapter.\space##1}%
+            \MakeTextUppercase{\@chapapp\space\thechapter\space##1}%
         \else
             \MakeTextUppercase{##1}%
         \fi
@@ -245,7 +257,7 @@
     %         % \let\addcontentsline\@gobblethree
             \exhyphenpenalty=10000\relax
             % зафиксировать межстрочный интервал и убрать лишние вертикальные отступы внутри оглавления
-            \SingleSpacing*
+            % \OnehalfSpacing*
             \justifying
             \origtableofcontents
         % \endgroup
@@ -258,4 +270,20 @@
     \cftsetindents{section}{0.0em}{1.85em}
     \cftsetindents{subsection}{0.0em}{2.65em}
     \cftsetindents{subsubsection}{0.0em}{2.55em}
+}
+
+\makeatletter
+\renewcommand*{\cftchapterformatpnum}[1]{%
+  \hbox to \@pnumwidth{\cftdotfill{\cftchapterdotsep}\cftchapterpagefont#1}}
+\renewcommand*{\cftsectionformatpnum}[1]{%
+  \hbox to \@pnumwidth{\cftdotfill{\cftdotsep}\cftsectionpagefont#1}}
+\renewcommand*{\cftsubsectionformatpnum}[1]{%
+  \hbox to \@pnumwidth{\cftdotfill{\cftdotsep}\cftsubsectionpagefont#1}}
+\renewcommand*{\cftsubsubsectionformatpnum}[1]{%
+  \hbox to \@pnumwidth{\cftdotfill{\cftdotsep}\cftsubsubsectionpagefont#1}}
+\makeatother
+
+\newcommand{\unnumberedsection}[1]{%
+  \section*{#1}%
+  \addcontentsline{toc}{section}{#1}%
 }

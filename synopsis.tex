@@ -3,7 +3,11 @@
 
 % Откомментируйте, чтобы отключить генерацию закладок в pdf
 % \PassOptionsToPackage{bookmarks=false}{hyperref}
-\documentclass[a4paper,14pt,twoside,openany,article]{memoir} %,draft
+
+% original twoside syntapsis
+% \documentclass[a4paper,14pt,twoside,openany,article]{memoir} %,draft
+% from dissertation.tex:
+\documentclass[a4paper,14pt,oneside,openany,article]{memoir}
 
 \input{common/setup}          % общие настройки шаблона
 \input{common/packages}       % Пакеты общие для диссертации и автореферата
@@ -25,6 +29,8 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage[none]{hyphenat}
+\usepackage{float}
+\usepackage{microtype}
 
 %%% Библиография. Выбор движка для реализации %%%
 \ifnumequal{\value{bibliosel}}{0}{%

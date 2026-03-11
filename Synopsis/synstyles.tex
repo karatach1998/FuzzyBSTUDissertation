@@ -2,7 +2,10 @@
 \graphicspath{{images/}{Synopsis/images/}}         % Пути к изображениям
 
 %%% Макет страницы %%%
-\geometry{a4paper, top=20mm, bottom=20mm, inner=30mm, outer=15mm, footskip=5mm, nomarginpar}%, showframe
+% symmetric synopsis geomery:
+% \geometry{a4paper, top=20mm, bottom=20mm, inner=25mm, outer=10mm, footskip=5mm, nomarginpar}%, showframe
+% dissertation geomery:
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=1cm, nofoot, nomarginpar} %, heightrounded, showframe
 \setlength{\topskip}{0pt}   %размер дополнительного верхнего поля
 
 %%% Интервалы %%%
@@ -12,6 +15,20 @@
 % \OnehalfSpacing*    % Полуторный интервал
 \SingleSpacing      % Одинарный интервал
 %\setSpacing{1.42}   % Полуторный интервал, подобный Ворду (возможно, стоит включать вместе с предыдущей строкой)
+% Отделять формулы от текста сверху и снизу одним строковым интервалом
+% (устанавливаем величины вокруг display-math в начале документа)
+\AtBeginDocument{%
+    \setlength{\abovedisplayskip}{1.5\baselineskip}%
+    \setlength{\belowdisplayskip}{1.5\baselineskip}%
+    \setlength{\abovedisplayshortskip}{1.5\baselineskip}%
+    \setlength{\belowdisplayshortskip}{1.5\baselineskip}%
+}
+% Один интервал сверху и снизу от рисунков и таблиц (ГОСТ)
+% \setlength{\intextsep}{1.5\baselineskip}      % над и под float'ами в середине страницы
+% \setlength{\textfloatsep}{1.5\baselineskip}   % между текстом и float'ом вверху/внизу страницы
+
+% \setlength{\abovecaptionskip}{\baselineskip}   % space between figure and caption
+% \setlength{\belowcaptionskip}{\baselineskip}   % space after caption
 
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
@@ -51,4 +68,15 @@
 }
 
 %%% Отступы у плавающих блоков %%%
-\setlength\textfloatsep{1ex}
+% Используем такой же порядок, как и выше (1.5 межстрочного интервала),
+% чтобы после таблиц и рисунков был заметный отступ, как после формул.
+% \setlength\textfloatsep{1.5\baselineskip}
+
+\newcommand{\theintvl}{2.5} % Интервал между заголовками и текстом в единицах размера шрифта (ГОСТ Р 7.0.11-2011, 5.3.5)
+%%% Интервалы между заголовками
+\setbeforesecskip{\theintvl\curtextsize}% Заголовки отделяют от текста сверху и снизу тремя интервалами (ГОСТ Р 7.0.11-2011, 5.3.5).
+\setaftersecskip{\theintvl\curtextsize}
+\setbeforesubsecskip{\theintvl\curtextsize}
+\setaftersubsecskip{\theintvl\curtextsize}
+\setbeforesubsubsecskip{\theintvl\curtextsize}
+\setaftersubsubsecskip{\theintvl\curtextsize}
