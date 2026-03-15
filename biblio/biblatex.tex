@@ -35,6 +35,19 @@ style=gost-numeric,% стиль цитирования и библиографи
 	\clearfield{note}%
 }
 
+% Keep bibliography entries in regular font even if the style marks
+% journals, book titles, or similar fields with \mkbibemph.
+\AtBeginBibliography{%
+  \OnehalfSpacing*%
+  \setlength{\itemsep}{0pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\topsep}{0pt}%
+  \setlength{\partopsep}{0pt}%
+  \setlength{\bibitemsep}{0pt}%
+  \setlength{\bibparsep}{0pt}%
+  \renewrobustcmd*{\mkbibemph}[1]{#1}%
+}
+
 \providebool{blxmc} % biblatex version needs and has MakeCapital workaround
 \boolfalse{blxmc} % setting our new boolean flag to default false
 \ifxetexorluatex
@@ -461,7 +474,7 @@ style=gost-numeric,% стиль цитирования и библиографи
 
 %%% Список литературы с красной строки (без висячего отступа) %%%
 \defbibenvironment{bibliography} % переопределяем окружение библиографии из gost-numeric.bbx пакета biblatex-gost
- {\sloppy\list
+ {\sloppy\OnehalfSpacing*\list
     {\printtext[labelnumberwidth]{%
       \printfield{prefixnumber}%
       \printfield{labelnumber}}}

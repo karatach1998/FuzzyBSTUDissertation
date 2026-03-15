@@ -4,6 +4,9 @@
                                 % http://tex.stackexchange.com/a/187930,
                                 % \DeclareRobustCommand protects \fixme
                                 % from expanding inside \MakeUppercase
+\makeatletter
+\renewcommand{\small}{\@setfontsize\small{12pt}{14pt}}
+\makeatother
 \AtBeginDocument{%
     \setlength{\parindent}{1.25cm}                   % Абзацный отступ. Должен быть одинаковым по всему тексту и равен пяти знакам (ГОСТ Р 7.0.11-2011, 5.3.7).
     \setlength{\parskip}{0pt}
